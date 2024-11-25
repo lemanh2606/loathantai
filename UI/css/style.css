@@ -132,6 +132,8 @@
   /* opacity: 0px; */
 }
 .buttontestaudio {
+  /* display: grid;
+  grid-template-columns: auto  ; */
   width: Fixed (188px) px;
   height: Fixed (56px) px;
   padding: 11px 20px 11px 16px;
