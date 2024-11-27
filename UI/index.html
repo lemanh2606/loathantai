@@ -6,62 +6,83 @@
         <title>Loa thần tài</title>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-white">
+
+    <body class="bg-white" data-spy="scroll" data-target=".fixed-top">
+
         <header
-            class="flex justify-center items-center text-center bg-white">
-            <div class="grid w-[1920px] h-[96px] px-[354px] py-[16px] "
-                style=" grid-template-columns: auto auto auto;">
-                <div class="w-[64.16px] h-[64px]"> <img class
-                        src="/UI/img/logo.png"
-                        alt="logo" /></div>
-                <nav class="w-[900px] h-[54px] gap-2 text-center">
+            class="w-screen h-24 flex justify-center items-center text-center fixed z-30 bg-[#FFFFFFE5] backdrop-blur-md">
+            <div
+                class="container flex sm:px-4 lg:px-11 justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a>
+                        <img class="w-[80px] h-[auto] " src="/UI/img/icon.png"
+                            alt="logo" />
+                    </a>
+                </div>
+
+                <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+                <!-- Navigation Menu -->
+                <nav
+                    class="hidden  bg-white peer-checked:block  lg:flex lg:flex-row lg:items-center w-full lg:w-auto lg:static absolute top-full left-0 lg:top-auto  lg:bg-transparent lg:shadow-none shadow-md">
                     <ul
-                        class=" list-none flex ">
+                        class="list-none flex flex-col lg:flex-row gap-2 lg:gap-0 lg:space-x-4 px-4 lg:px-0">
                         <li
-                            class="w-[206px] h-[54px] rounded px-4 py-2 gap-2  text-left">
-                            <a href="#"></a>Loa thần tài Mobifone
+                            class="w-full lg:w-[206px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-blue-500 active:text-white transition">
+                            <a href="#">Loa thần tài Mobifone</a>
                         </li>
                         <li
-                            class="w-[153px] h-[54px] rounded px-4 py-2 gap-2 text-left">
-                            <a
-                                href="#">Cách hoạt động</a>
+                            class="w-full lg:w-[153px] h-[54px] px-4 py-2 rounded text-left hover:bg-gray-200 hover:text-blue-600 active:bg-blue-500 active:text-white transition">
+                            <a href="#">Cách hoạt động</a>
                         </li>
                         <li
-                            class="w-[100px] h-[54px] px-4 py-2 rounded gap-2 text-left">
+                            class="w-full lg:w-[100px] h-[54px] px-4 py-2 rounded text-left hover:bg-gray-200 hover:text-blue-600 active:bg-blue-500 active:text-white transition">
                             <a href="#">Ưu điểm</a>
                         </li>
                         <li
-                            class="w-[108px] h-[54px] px-4 py-2 rounded gap-2 text-left"><a
-                                href="#">Giải pháp</a>
+                            class="w-full lg:w-[108px] h-[54px] px-4 py-2 rounded text-left hover:bg-gray-200 hover:text-blue-600 active:bg-blue-500 active:text-white transition">
+                            <a href="#">Giải pháp</a>
                         </li>
                         <li
-                            class="w-[125px] h-[54px] px-4 py-2 rounded  gap-2 text-left">
+                            class="w-full lg:w-[125px] h-[54px] px-4 py-2 rounded text-left hover:bg-gray-200 hover:text-blue-600 active:bg-blue-500 active:text-white transition">
                             <a href="#">Khách hàng</a>
                         </li>
                         <li
-                            class="w-[72px] h-[54px] px-4 py-2 rounded  gap-2 text-left">
+                            class="w-full lg:w-[72px] h-[54px] px-4 py-2 rounded text-left hover:bg-gray-200 hover:text-blue-600 active:bg-blue-500 active:text-white transition">
                             <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <button
-                                class="w-[129px] h-[40px] px-5 py-3 rounded-full border border-red-700 text-red-700 bg-white text-sm font-bold cursor-pointer">
-                                Nhận tư vấn
-                            </button>
                         </li>
                     </ul>
                 </nav>
+
+                <!-- Button "Nhận tư vấn" (Vẫn luôn hiển thị) -->
+                <div class="flex">
+                    <button
+                        class="w-[129px] h-[40px] rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
+                        Nhận tư vấn
+                    </button>
+                    <!-- Toggle Menu Button -->
+                    <label for="menu-toggle" class="lg:hidden cursor-pointer">
+                        <img src="/UI/img/navtoggle.png" alt="Menu Toggle"
+                            class="w-12 h-10" />
+                    </label>
+                </div>
+
             </div>
         </header>
 
         <div
-            class="flex justify-center items-center overflow-hidden ">
-            <div class="flex flex-col items-start space-y-6 px-10 py-5">
+            class=" lg:justify-center items-center overflow-hidden  grid xl:flex ">
+            <div
+                class="flex flex-col items-start space-y-6 px-10 py-5"
+                style="height: 673.938px; transform: translate(0px, 174.666px);">
                 <div
                     class="w-[483px] h-[156px] opacity-100 font-bold text-4xl leading-tight text-left">
                     Giải pháp Loa sử dụng công nghệ AI hỗ trợ rảnh tay bán hàng
                 </div>
                 <div
-                    class="w-[500px] h-[112px] opacity-100 font-semibold text-lg leading-7 text-left">
+                    class="w-[500px] h-[112px] opacity-100 font-semibold text-lg leading-7 text-left"
+                    style="height: 129px; transform: translate(0px, -17px)">
                     Loa Thần Tài Mobifone là thiết bị phát âm thanh bằng giọng
                     nói, thông
                     báo kết quả thanh toán qua mã QR. Khi giao dịch thành công,
@@ -72,128 +93,139 @@
                 </div>
                 <div class="flex space-x-8">
                     <button
-                        class="flex items-center justify-center w-[188px] h-[56px] px-5 py-2 rounded-full border border-red-700 bg-red-500 text-black text-sm font-bold">
-                        <img
-                            src="/UI/img/logo.png"
-                            alt="Play icon"
-                            class="w-5 h-4 mr-2" />
-                        Nghe thử loa
+                        class="flex items-center justify-center w-[188px] h-[56px] px-5 py-2 rounded-full border border-[#B90417]  bg-[#B90417] text-black text-sm font-bold">
+                        <!-- <img src="/UI/img/logo.png" alt="Play icon"
+                            class="w-5 h-4 mr-2" /> -->
+                        <div
+                            style="width: 16.6667px; height: 8.88889px; border-top: 5px solid transparent; border-left: 10px solid rgb(255, 255, 255); border-bottom: 5px solid transparent; transform: translate(-6.66669px, 0px);">
+
+                        </div>
+                        <p class="text-white">Nghe thử loa</p>
                     </button>
                     <button
-                        class="w-[188px] h-[56px] px-4 py-2 rounded-full border border-red-700 bg-white text-red-700 text-sm font-bold cursor-pointer">
-                        Nhận tư vấn
+                        class="w-[188px] h-[56px] px-4 py-2 rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
+                        <p class="text-center"> Nhận tư vấn</p>
+
                     </button>
                 </div>
             </div>
-            <div class="px-10 py-5">
+            <div class="px-10 py-5"
+                style="height: 478.941px; transform: translate(0px, 66.6662px);">
                 <img
-                    src="/UI/img/image.png"
+                    src="/UI/img/thantai.png"
                     alt="image1"
-                    class="w-[533.41px] h-[444.71px] opacity-100" />
+                    class="w-[690.71px] h-[479.3px] opacity-100" />
             </div>
         </div>
-        <div
-            class="flex justify-center items-center  text-center">
+        <div class="flex justify-center items-center text-center">
             <div
-                class="w-[665] h-[44px] top-[788px] left-[627.5px] text-[32px] font-bold leading-[43.65px]">
-                3 Bước
-                để nhận
-                tiền qua
-                Loa Thần Tài Mobifone</div>
+                class="w-[665] h-[44px] top-[788px] left-[627.5px] text-[32px] font-bold leading-[43.65px]"
+                style="height: 144.188px; transform: translate(0px, 162.778px);">
+                3 Bước để nhận tiền qua Loa Thần Tài Mobifone
+            </div>
         </div>
 
         <div
-            class="flex justify-center items-center text-center  "
-            style="height: 18px; transform: translate(0px, 118px);">
-
-            <div class="w-[1100px] grid grid-cols-3 ">
+            class="flex justify-center items-center text-center"
+            style="height: 18px; transform: translate(0px, 118px)">
+            <div class="w-[1100px] grid grid-cols-3"
+                style="height: 126.667px; transform: translate(0px, 53.3333px);">
                 <div
-                    class="relative flex-col items-center w-[420px] h-[180px] bg-yellow-400 text-center  mx-2 overflow-hidden grid gap-2 rounded-s-3xl "
-                    style="  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 0%);">
-
+                    class="relative flex-col items-center w-[420px] h-[180px] bg-[#F4C357] text-center mx-2 overflow-hidden grid gap-2 rounded-s-3xl"
+                    style="
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 0%);
+          ">
                     <div
-                        class=" absolute top-3 left-5 flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full ">
+                        class="absolute top-3 left-5 flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
                         1
                     </div>
 
-                    <div class="px-4 py-2 text-left ">
+                    <div class="px-4 py-2 text-left">
                         Khách hàng quét mã QR trên thiết bị Loa Thần Tài để
-                        chuyển
-                        khoản
+                        chuyển khoản
                     </div>
-
                 </div>
 
                 <div
-                    class="relative  flex-col items-center w-[420px] h-[180px] bg-yellow-400 text-center  mx-2 overflow-hidden grid gap-2"
-                    style="  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);">
-
+                    class="relative flex-col items-center w-[420px] h-[180px] bg-[#F4C357] text-center mx-2 overflow-hidden grid gap-2"
+                    style="
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
+          ">
                     <div
                         class="absolute top-3 left-[60px] flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
                         2
                     </div>
 
-                    <div class="px-4 py-2 text-left left-[20px]"
-                        style="width: 251px; transform: translate(34px, 16px); height: 96px; position: relative; transition: none; cursor: move;">
+                    <div
+                        class="px-4 py-2 text-left left-[20px]"
+                        style="
+              width: 251px;
+              transform: translate(34px, 16px);
+              height: 96px;
+              position: relative;
+              transition: none;
+              cursor: move;
+            ">
                         Loa Thần Tài xác nhận số tiền giao dịch. Thu ngân nghe
-                        loa
-                        báo và xác nhận cho khách hàng
+                        loa báo và
+                        xác nhận cho khách hàng
                     </div>
-
                 </div>
 
                 <div
-                    class="relative items-center w-[420px] h-[180px] bg-yellow-400 text-center mx-2 overflow-hidden grid gap-2 "
-                    style="  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);">
-
+                    class="relative items-center w-[420px] h-[180px] bg-[#F4C357] text-center mx-2 overflow-hidden grid gap-2"
+                    style="
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
+          ">
                     <div
                         class="absolute top-3 left-[60px] flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
                         3
                     </div>
 
-                    <div class="px-4 py-2 text-left left-[20px]"
-                        style="width: 249px; transform: translate(51px, 8px); height: 81px;">
+                    <div
+                        class="px-4 py-2 text-left left-[20px]"
+                        style="width: 249px; transform: translate(51px, 8px); height: 81px">
                         Chủ cửa hàng và thu ngân theo dõi tiền về qua app Loa
-                        Thần
-                        Tài
+                        Thần Tài
                     </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="flex justify-center items-center pt-8"
+            style="transform: translate(13px, 237.778px); height: 402.222px;">
+            <div
+                class="w-[800px] h-[450px] top-[1118px] left-[560px] rounded-[80px] bg-[rgba(138,15,28,var(--tw-bg-opacity))]"
+                style="transform: translate(13px, 190px)">
+                <div class="flex justify-start items-center pt-8 mt-14 ml-10">
+                    <div class="w-[226px] h-[171px] gap-[12px]">
+                        <div
+                            class="w-[223px] h-[49px] rounded-[8px] pb-2 px-4 gap-2 bg-[#F4C357] backdrop-blur-[10px]">
+                            <p
+                                class="w-[191px] font-extrabold text-[22px] leading-[32.74px]">
+                                4 Bước nhận tiền
+                            </p>
+                        </div>
+                        <div
+                            class="w-[226px] h-[49px] rounded-lg px-4 py-2 gap-2 bg-[#FFFFFF1F] backdrop-blur-[10px]">
+                            <p
+                                class="w-[194px] h-[33px] font-bold text-[24px] leading-[32.74px] bg-[#FFFFFF];"
+                                style="
+                  height: 43.1289px;
+                  transform: translate(0px, 5.87109px);
+                  color: #ffffff;
+                ">
+                                Qua Loa Thần Tài
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div
-            class="flex justify-center items-center pt-8">
-            <div
-                class="w-[800px] h-[450px]  top-[1118px] left-[560px] rounded-[80px] bg-[rgba(138,15,28,var(--tw-bg-opacity))]"
-                style=" transform: translate(13px, 190px);">
-                <div class="flex justify-start items-center pt-8  mt-14 ml-10 ">
-                    <div class="w-[226px] h-[171px] gap-[12px]">
-                        <div
-                            class="w-[223px] h-[49px] rounded-[8px] pb-2  px-4 gap-2 bg-[#F4C357] backdrop-blur-[10px]">
-                            <p
-                                class="w-[191px] font-extrabold text-[22px] leading-[32.74px]
-                                ">4
-                                Bước nhận tiền </p>
-                        </div>
-                        <div
-                            class="w-[226px] h-[49px] rounded-lg px-4 py-2 gap-2 bg-[#FFFFFF1F] backdrop-blur-[10px]
-
-                            ">
-                            <p
-                                class="w-[194px] h-[33px] font-bold text-[24px] leading-[32.74px] bg-[#FFFFFF];"
-                                style=" height: 43.1289px; transform:translate(0px, 5.87109px); color: #FFFFFF;">Qua
-                                Loa Thần Tài</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="max-w-7xl mx-auto py-10 px-4 relative"
-            style="height: 295px; transform: translate(0px, 361px);">
+            class="max-w-7xl mx-auto py-10 px-4 relative"
+            style="height: 87.2046px; transform: translate(0px, 568.777px);">
             <h2 class="text-center text-2xl font-bold mb-10">
                 8 lý do chọn Loa Thần Tài MobiFone
             </h2>
@@ -214,7 +246,8 @@
                             <h3 class="font-bold">Phòng tránh gian lận</h3>
                             <p class="text-gray-600">
                                 Kiểm soát chặt chẽ các giao dịch, phòng ngừa rủi
-                                ro thanh toán an toàn.
+                                ro thanh toán
+                                an toàn.
                             </p>
                         </div>
                         <!-- Đường nối ngang -->
@@ -230,7 +263,8 @@
                             <h3 class="font-bold">Giải pháp đa nền tảng</h3>
                             <p class="text-gray-600">
                                 Tích hợp, dễ sử dụng và quản lý doanh thu qua
-                                các nền tảng App Mobile, Website cho người dùng.
+                                các nền tảng App
+                                Mobile, Website cho người dùng.
                             </p>
                         </div>
                         <div
@@ -277,7 +311,8 @@
                             <h3 class="font-bold">Tăng năng suất bán hàng</h3>
                             <p class="text-gray-600">
                                 Giải pháp giúp nâng cao hiệu quả giao dịch, bán
-                                hàng nhanh chóng.
+                                hàng nhanh
+                                chóng.
                             </p>
                         </div>
                         <div
@@ -304,9 +339,8 @@
                             class="text-red-500 font-bold text-lg flex-shrink-0">6</div>
                         <div class="bg-white rounded-lg shadow-md p-6 relative">
                             <h3 class="font-bold">Giao dịch không mất phí</h3>
-                            <p class="text-gray-600">
-                                Tiết kiệm chi phí cho doanh nghiệp.
-                            </p>
+                            <p class="text-gray-600">Tiết kiệm chi phí cho doanh
+                                nghiệp.</p>
                         </div>
                         <div
                             class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
@@ -330,8 +364,6 @@
             </div>
         </div>
 
-        <footer>
-
-        </footer>
+        <footer></footer>
     </body>
 </html>
