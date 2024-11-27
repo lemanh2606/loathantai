@@ -1,366 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Loa thần tài</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
 
-    <body class="bg-white" data-spy="scroll" data-target=".fixed-top">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loa thần tài</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-        <header
-            class="w-screen h-24 flex justify-center items-center text-center fixed z-30 bg-[#FFFFFFE5] backdrop-blur-md">
-            <div
-                class="container flex sm:px-4 lg:px-11 justify-between items-center w-[1300px] transform md:translate-x-[-10.6667px] lg:translate-x-[-46.6667px]">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <a>
-                        <img class="w-[80px] h-[auto] " src="/UI/img/icon.png"
-                            alt="logo" />
-                    </a>
-                </div>
+<body class="bg-white" data-spy="scroll" data-target=".fixed-top">
 
-                <input type="checkbox" id="menu-toggle" class="hidden peer" />
+  <header class="w-screen h-24 flex justify-center items-center text-center fixed z-30 bg-[#FFFFFFE5] backdrop-blur-md">
+    <div
+      class="container flex sm:px-4 lg:px-11 justify-between items-center w-[1300px] transform md:translate-x-[-10.6667px] lg:translate-x-[-60.6667px]">
+      <!-- Logo -->
+      <div class="flex items-center">
+        <a>
+          <img class="lg:w-[150px] h-[auto] sm:w-[100px] w-[80px] pt-1" src="/UI/img/icon.png" alt="logo" />
+        </a>
+      </div>
 
-                <!-- Navigation Menu -->
-                <nav
-                    class="hidden  bg-white peer-checked:block  lg:flex lg:flex-row lg:items-center w-full lg:w-auto lg:static absolute top-full left-0 lg:top-auto  lg:bg-transparent lg:shadow-none shadow-md">
-                    <ul
-                        class="list-none flex flex-col lg:flex-row gap-2 lg:gap-0 lg:space-x-4 px-4 lg:px-0">
-                        <li
-                            class="w-full lg:w-[206px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
-                            <a href="#">Loa thần tài Mobifone</a>
-                        </li>
-                        <li
-                            class="w-full lg:w-[153px] h-[54px] px-4 py-2 rounded text-left  hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
-                            <a href="#">Cách hoạt động</a>
-                        </li>
-                        <li
-                            class="w-full lg:w-[100px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
-                            <a href="#">Ưu điểm</a>
-                        </li>
-                        <li
-                            class="w-full lg:w-[108px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
-                            <a href="#">Giải pháp</a>
-                        </li>
-                        <li
-                            class="w-full lg:w-[125px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
-                            <a href="#">Khách hàng</a>
-                        </li>
-                        <li
-                            class="w-full lg:w-[72px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
-                            <a href="#">FAQ</a>
-                        </li>
-                    </ul>
-                </nav>
+      <input type="checkbox" id="menu-toggle" class="hidden peer" />
 
-                <!-- Button "Nhận tư vấn" (Vẫn luôn hiển thị) -->
-                <div class="flex">
-                    <button
-                        class="w-[129px] h-[40px] rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
-                        Nhận tư vấn
-                    </button>
-                    <!-- Toggle Menu Button -->
-                    <label for="menu-toggle" class="lg:hidden cursor-pointer">
-                        <img src="/UI/img/navtoggle.png" alt="Menu Toggle"
-                            class="w-12 h-10" />
-                    </label>
-                </div>
+      <!-- Navigation Menu -->
+      <nav
+        class="hidden  bg-white peer-checked:block  lg:flex lg:flex-row lg:items-center w-full lg:w-auto lg:static absolute top-full left-0 lg:top-auto  lg:bg-transparent lg:shadow-none shadow-md">
+        <ul class="list-none flex flex-col lg:flex-row gap-2 lg:gap-0 lg:space-x-4 px-4 lg:px-0">
+          <li
+            class="w-full lg:w-[206px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
+            <a href="#">Loa thần tài Mobifone</a>
+          </li>
+          <li
+            class="w-full lg:w-[153px] h-[54px] px-4 py-2 rounded text-left  hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
+            <a href="#">Cách hoạt động</a>
+          </li>
+          <li
+            class="w-full lg:w-[100px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
+            <a href="#">Ưu điểm</a>
+          </li>
+          <li
+            class="w-full lg:w-[108px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
+            <a href="#">Giải pháp</a>
+          </li>
+          <li
+            class="w-full lg:w-[125px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
+            <a href="#">Khách hàng</a>
+          </li>
+          <li
+            class="w-full lg:w-[72px] h-[54px] px-4 py-2 rounded text-left hover:bg-[#FFFFFFE5] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition">
+            <a href="#">FAQ</a>
+          </li>
+        </ul>
+      </nav>
 
-            </div>
-        </header>
+      <!-- Button "Nhận tư vấn" (Vẫn luôn hiển thị) -->
+      <div class="flex">
+        <button
+          class="lg:w-[129px] lg:h-[40px] md:w-[120px]  h-auto rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
+          Nhận tư vấn
+        </button>
+        <!-- Toggle Menu Button -->
+        <label for="menu-toggle" class="lg:hidden cursor-pointer">
+          <img src="/UI/img/navtoggle.png" alt="Menu Toggle" class="w-12 h-10" />
+        </label>
+      </div>
 
-        <div
-            class=" lg:justify-center items-center overflow-hidden  grid xl:flex ">
-            <div
-                class="flex flex-col items-start space-y-6 px-10 py-5 h-[673.938px] transform translate-y-[174.666px]">
-                <div
-                    class="lg:w-[483px] lg:h-[156px] opacity-100 font-bold text-4xl leading-tight text-left w-auto h-auto md:w-[auto] md:h-[100px]">
-                    Giải pháp Loa sử dụng công nghệ AI hỗ trợ rảnh tay bán hàng
-                </div>
-                <div
-                    class="lg:w-[500px] lg:h-[112px] opacity-100 font-semibold lg:text-lg leading-7 text-left  w-auto h-auto sm:text-sm md:text-md xs:text-xs"
-                    style="height: 129px; transform: translate(0px, -17px)">
-                    Loa Thần Tài Mobifone là thiết bị phát âm thanh bằng giọng
-                    nói, thông
-                    báo kết quả thanh toán qua mã QR. Khi giao dịch thành công,
-                    loa sẽ tự
-                    động đọc chính xác số tiền khách hàng đã chuyển khoản, giúp
-                    người bán
-                    nhận tiền nhanh chóng và an toàn.
-                </div>
-                <div class="flex space-x-8">
-                    <button
-                        class="flex items-center justify-center  lg:w-[188px] lg:h-[56px] px-5 py-2 rounded-full border border-[#B90417]  bg-[#B90417] text-black text-sm font-bold  w-auto h-auto ">
-                        <div
-                            style="width: 16.6667px; height: 8.88889px; border-top: 5px solid transparent; border-left: 10px solid rgb(255, 255, 255); border-bottom: 5px solid transparent; transform: translate(-6.66669px, 0px);">
+    </div>
+  </header>
 
-                        </div>
-                        <p class="text-white">Nghe thử loa</p>
-                    </button>
-                    <button
-                        class="lg:w-[188px] lg:h-[56px]  w-auto h-auto  px-4 py-2 rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
-                        <p class="text-center"> Nhận tư vấn</p>
+  <div class=" lg:justify-center items-center  grid xl:flex ">
+    <div class="flex flex-col items-start space-y-6 px-10 py-5 h-[673.938px] transform translate-y-[174.666px]">
+      <div
+        class="lg:w-[483px] lg:h-[156px] opacity-100 font-bold text-4xl leading-tight text-left w-auto h-auto md:w-[auto] md:h-[100px]">
+        Giải pháp Loa sử dụng công nghệ AI hỗ trợ rảnh tay bán hàng
+      </div>
+      <div
+        class="lg:w-[500px] lg:h-[112px] opacity-100 font-semibold lg:text-lg leading-7 text-left  w-auto h-auto sm:text-md md:text-md text-xs "
+        style="height: 129px; transform: translate(0px, -17px)">
+        Loa Thần tài MobiFone là giải pháp phát âm thanh bằng giọng nói ứng dụng công nghệ trí tuệ nhân tạo của
+        MobiFone. Nhằm thông báo chính xác kết quả trong từng giao dịch thanh toán thành công. Giúp người bán rảnh tay
+        bán hàng, nhận tiền nhanh chóng và an toàn.
+      </div>
+      <div class="flex space-x-8 xs:transition-none xs:h-[58px]  xs:translate-x-0 xs:translate-y-[103.816px]"
+        style="height: 40.0861px; transform: translate(0px, 50.3007px); transition: none;">
+        <button
+          class="flex items-center justify-center  lg:w-[188px] lg:h-[56px] px-5 py-2 rounded-full border border-[#B90417]  bg-[#B90417] text-black text-sm font-bold  w-auto h-auto ">
+          <div
+            style="width: 16.6667px; height: 8.88889px; border-top: 5px solid transparent; border-left: 10px solid rgb(255, 255, 255); border-bottom: 5px solid transparent; transform: translate(-6.66669px, 0px);">
 
-                    </button>
-                </div>
-            </div>
-            <div class="px-10 py-5"
-                style="height: 478.941px; transform: translate(0px, 15.6662px);">
-                <img
-                    src="/UI/img/thantai.png"
-                    alt="image1"
-                    class="w-[690.71px] h-[479.3px] opacity-100" />
-            </div>
-        </div>
-        <div class="flex justify-center items-center text-center">
-            <div
-                class="w-full h-[44px] top-[788px] left-[627.5px] text-[32px] font-bold leading-[43.65px]"
-                style="height: 144.188px; transform: translate(0px, 162.778px);">
-                3 Bước để nhận tiền qua Loa Thần Tài Mobifone
-            </div>
-        </div>
+          </div>
+          <p class="text-white">Nghe thử loa</p>
+        </button>
+        <button
+          class="text-center items-center justify-center flex lg:w-[195px] lg:h-[56px]  w-auto h-auto  px-4  rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
+          <p class="text-center"> Nhận tư vấn</p>
 
-        <div
-            class="flex justify-center items-center text-center"
-            style="height: 18px; transform: translate(0px, 118px)">
-            <div class="w-[1100px] grid grid-cols-3"
-                style="height: 126.667px; transform: translate(0px, 53.3333px);">
-                <div
-                    class="relative flex-col items-center w-[420px] h-[180px] bg-[#F4C357] text-center mx-2 overflow-hidden grid gap-2 rounded-s-3xl"
-                    style="
+        </button>
+      </div>
+    </div>
+    <div class="px-10 py-5 lg:h-[478.941px]  transform lg:translate-y-[15.6662px]  ">
+      <img src="/UI/img/thantai.png" alt="image1"
+        class="w-[343px] h-[253px] sm:w-[700px] sm:h-[500px]  opacity-100 lg:h-[509.297px] lg:w-[708.688px] transform lg:translate-y-[20px]" />
+    </div>
+  </div>
+  <div class="flex justify-center items-center text-center" >
+    <div class="w-full h-[44px] top-[788px] left-[627.5px] text-[32px] font-bold leading-[43.65px]"
+      style="height: 144.188px; transform: translate(0px, 162.778px);">
+      3 Bước để nhận tiền qua Loa Thần Tài Mobifone
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center text-center" style="height: 18px; transform: translate(0px, 118px)">
+    <div class="w-[1100px] grid grid-cols-3" style="height: 126.667px; transform: translate(0px, 53.3333px);">
+      <div
+        class=" flex-col items-center lg:w-[420px] lg:h-[180px] w-[150.33px] h-[260px] md:w-[300px] md:h-[300px] sm:w-[250px] sm:h-[250px] bg-[#F4C357] text-center lg:mx-2 overflow-hidden grid lg:gap-2 rounded-s-3xl"
+        style="
             clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 0% 0%);
           ">
-                    <div
-                        class="absolute top-3 left-5 flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
-                        1
-                    </div>
-
-                    <div class="px-4 py-2 text-left">
-                        Khách hàng quét mã QR trên thiết bị Loa Thần Tài để
-                        chuyển khoản
-                    </div>
-                </div>
-
-                <div
-                    class="relative flex-col items-center w-[420px] h-[180px] bg-[#F4C357] text-center mx-2 overflow-hidden grid gap-2"
-                    style="
-            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
-          ">
-                    <div
-                        class="absolute top-3 left-[60px] flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
-                        2
-                    </div>
-
-                    <div
-                        class="px-4 py-2 text-left left-[20px]"
-                        style="
-              width: 251px;
-              transform: translate(34px, 16px);
-              height: 96px;
-              position: relative;
-              transition: none;
-              cursor: move;
-            ">
-                        Loa Thần Tài xác nhận số tiền giao dịch. Thu ngân nghe
-                        loa báo và
-                        xác nhận cho khách hàng
-                    </div>
-                </div>
-
-                <div
-                    class="relative items-center w-[420px] h-[180px] bg-[#F4C357] text-center mx-2 overflow-hidden grid gap-2"
-                    style="
-            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
-          ">
-                    <div
-                        class="absolute top-3 left-[60px] flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
-                        3
-                    </div>
-
-                    <div
-                        class="px-4 py-2 text-left left-[20px]"
-                        style="width: 249px; transform: translate(51px, 8px); height: 81px">
-                        Chủ cửa hàng và thu ngân theo dõi tiền về qua app Loa
-                        Thần Tài
-                    </div>
-                </div>
-            </div>
+        <div
+          class="absolute top-3 left-5 flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
+          1
         </div>
 
-        <div class="flex justify-center items-center pt-8"
-            style="transform: translate(13px, 237.778px); height: 402.222px;">
-            <div
-                class="w-[800px] h-[450px] top-[1118px] left-[560px] rounded-[80px] bg-[rgba(138,15,28,var(--tw-bg-opacity))]"
-                style="transform: translate(13px, 190px)">
-                <div class="flex justify-start items-center pt-8 mt-14 ml-10">
-                    <div class="w-[226px] h-[171px] gap-[12px]">
-                        <div
-                            class="w-[223px] h-[49px] rounded-[8px] pb-2 px-4 gap-2 bg-[#F4C357] backdrop-blur-[10px]">
-                            <p
-                                class="w-[191px] font-extrabold text-[22px] leading-[32.74px]">
-                                4 Bước nhận tiền
-                            </p>
-                        </div>
-                        <div
-                            class="w-[226px] h-[49px] rounded-lg px-4 py-2 gap-2 bg-[#FFFFFF1F] backdrop-blur-[10px]">
-                            <p
-                                class="w-[194px] h-[33px] font-bold text-[24px] leading-[32.74px] bg-[#FFFFFF];"
-                                style="
+        <div class="px-4 py-2 text-left md:w-[200px] lg:w-[374px] transform lg:translate-y-0 lg:translate-x-[13px]">
+          Khách hàng quét mã QR trên thiết bị Loa Thần Tài để
+          chuyển khoản
+        </div>
+      </div>
+
+      <div
+        class="relative flex-col items-center lg:w-[420px] lg:h-[180px] w-[150.33px] h-[260px] md:w-[300px] md:h-[300px] sm:w-[250px] sm:h-[250px] bg-[#F4C357] text-center lg:mx-2 overflow-hidden grid lg:gap-2"
+        style="
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
+          ">
+        <div
+          class="absolute top-3 lg:left-[60px] left-4  flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
+          2
+        </div>
+
+        <div class="px-4 py-2 text-left left-[20px] lg:w-[251px] transform translate-x-[34px] translate-y-[16px] lg:h-[96px] relative transition-none cursor-move md:w-[200px]" style="width: 326px; transform: translate(48px, 15px); height: 97px;">
+          Loa Thần Tài xác nhận số tiền giao dịch. Thu ngân nghe
+          loa báo và
+          xác nhận cho khách hàng
+        </div>
+      </div>
+
+      <div class="relative items-center lg:w-[420px] lg:h-[180px] w-[150.33px] h-[260px] md:w-[300px] md:h-[300px] sm:w-[250px] sm:h-[250px] bg-[#F4C357] text-center lg:mx-2 overflow-hidden grid lg:gap-2"
+        style="
+            clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%, 15% 50%);
+          ">
+        <div
+          class="absolute top-3 lg:left-[60px] left-4 flex justify-center items-center w-8 h-8 bg-red-700 text-white font-bold rounded-full">
+          3
+        </div>
+
+        <div class="px-4 py-2 text-left left-[20px] md:w-[200px]"
+          style="width: 249px; transform: translate(51px, 8px); height: 81px">
+          Chủ cửa hàng và thu ngân theo dõi tiền về qua app Loa
+          Thần Tài
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="flex justify-center items-center pt-8" style="transform: translate(13px, 237.778px); height: 402.222px;">
+    <div class="w-[800px] h-[450px] top-[1118px] left-[560px] rounded-[80px] bg-[rgba(138,15,28,var(--tw-bg-opacity))]"
+      style="transform: translate(13px, 190px)">
+      <div class="flex justify-start items-center pt-8 mt-14 ml-10">
+        <div class="w-[226px] h-[171px] gap-[12px]">
+          <div class="w-[223px] h-[49px] rounded-[8px] pb-2 px-4 gap-2 bg-[#F4C357] backdrop-blur-[10px]">
+            <p class="w-[191px] font-extrabold text-[22px] leading-[32.74px]">
+              4 Bước nhận tiền
+            </p>
+          </div>
+          <div class="w-[226px] h-[49px] rounded-lg px-4 py-2 gap-2 bg-[#FFFFFF1F] backdrop-blur-[10px]">
+            <p class="w-[194px] h-[33px] font-bold text-[24px] leading-[32.74px] bg-[#FFFFFF];" style="
                   height: 43.1289px;
                   transform: translate(0px, 5.87109px);
                   color: #ffffff;
                 ">
-                                Qua Loa Thần Tài
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+              Qua Loa Thần Tài
+            </p>
+          </div>
+          <div class="w-[150px] h-[49px] rounded-lg px-4 py-2 gap-2 bg-[#FFFFFF1F] backdrop-blur-[10px]">
+            <p class="w-[194px] h-[33px] font-bold text-[24px] leading-[32.74px] bg-[#FFFFFF];" style="
+                  height: 43.1289px;
+                  transform: translate(0px, 5.87109px);
+                  color: #ffffff;
+                ">
+              Mobifone
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-7xl mx-auto py-10 px-4 relative" style="height: 87.2046px; transform: translate(0px, 568.777px);">
+    <h2 class="text-center text-2xl font-bold mb-10">
+      8 lý do chọn Loa Thần Tài MobiFone
+    </h2>
+
+    <!-- Đường nối -->
+    <div class="hidden md:block absolute w-1 bg-red-300 h-full top-0 left-1/2 transform -translate-x-1/2"></div>
+
+    <!-- Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative">
+      <!-- Bên trái -->
+      <div class="space-y-8 relative">
+        <!-- Khối 1 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">1</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Phòng tránh gian lận</h3>
+            <p class="text-gray-600">
+              Kiểm soát chặt chẽ các giao dịch, phòng ngừa rủi
+              ro thanh toán
+              an toàn.
+            </p>
+          </div>
+          <!-- Đường nối ngang -->
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
         </div>
 
-        <div
-            class="max-w-7xl mx-auto py-10 px-4 relative"
-            style="height: 87.2046px; transform: translate(0px, 568.777px);">
-            <h2 class="text-center text-2xl font-bold mb-10">
-                8 lý do chọn Loa Thần Tài MobiFone
-            </h2>
-
-            <!-- Đường nối -->
-            <div
-                class="hidden md:block absolute w-1 bg-red-300 h-full top-0 left-1/2 transform -translate-x-1/2"></div>
-
-            <!-- Container -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 relative">
-                <!-- Bên trái -->
-                <div class="space-y-8 relative">
-                    <!-- Khối 1 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">1</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Phòng tránh gian lận</h3>
-                            <p class="text-gray-600">
-                                Kiểm soát chặt chẽ các giao dịch, phòng ngừa rủi
-                                ro thanh toán
-                                an toàn.
-                            </p>
-                        </div>
-                        <!-- Đường nối ngang -->
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
-                    </div>
-
-                    <!-- Khối 3 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">3</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Giải pháp đa nền tảng</h3>
-                            <p class="text-gray-600">
-                                Tích hợp, dễ sử dụng và quản lý doanh thu qua
-                                các nền tảng App
-                                Mobile, Website cho người dùng.
-                            </p>
-                        </div>
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
-                    </div>
-
-                    <!-- Khối 5 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">5</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Kết nối mọi lúc mọi nơi</h3>
-                            <p class="text-gray-600">
-                                Kết nối dễ dàng qua Wi-Fi/4G mọi nơi cùng mạng
-                                MobiFone.
-                            </p>
-                        </div>
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
-                    </div>
-
-                    <!-- Khối 7 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">7</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Thời gian bảo hành</h3>
-                            <p class="text-gray-600">
-                                Bảo hành toàn diện 24 tháng từ khi triển khai.
-                            </p>
-                        </div>
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
-                    </div>
-                </div>
-
-                <!-- Bên phải -->
-                <div class="space-y-8 relative">
-                    <!-- Khối 2 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">2</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Tăng năng suất bán hàng</h3>
-                            <p class="text-gray-600">
-                                Giải pháp giúp nâng cao hiệu quả giao dịch, bán
-                                hàng nhanh
-                                chóng.
-                            </p>
-                        </div>
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
-                    </div>
-
-                    <!-- Khối 4 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">4</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Tốc độ thông báo tức thì</h3>
-                            <p class="text-gray-600">
-                                Hỗ trợ người dùng tối ưu hóa tốc độ xử lý.
-                            </p>
-                        </div>
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
-                    </div>
-
-                    <!-- Khối 6 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">6</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Giao dịch không mất phí</h3>
-                            <p class="text-gray-600">Tiết kiệm chi phí cho doanh
-                                nghiệp.</p>
-                        </div>
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
-                    </div>
-
-                    <!-- Khối 8 -->
-                    <div class="flex items-start space-x-4 relative">
-                        <div
-                            class="text-red-500 font-bold text-lg flex-shrink-0">8</div>
-                        <div class="bg-white rounded-lg shadow-md p-6 relative">
-                            <h3 class="font-bold">Chất lượng thiết bị cao
-                                cấp</h3>
-                            <p class="text-gray-600">
-                                Thiết bị cao cấp hỗ trợ mọi hoạt động bán hàng.
-                            </p>
-                        </div>
-                        <div
-                            class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
-                    </div>
-                </div>
-            </div>
+        <!-- Khối 3 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">3</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Giải pháp đa nền tảng</h3>
+            <p class="text-gray-600">
+              Tích hợp, dễ sử dụng và quản lý doanh thu qua
+              các nền tảng App
+              Mobile, Website cho người dùng.
+            </p>
+          </div>
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
         </div>
 
-        <footer></footer>
-    </body>
+        <!-- Khối 5 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">5</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Kết nối mọi lúc mọi nơi</h3>
+            <p class="text-gray-600">
+              Kết nối dễ dàng qua Wi-Fi/4G mọi nơi cùng mạng
+              MobiFone.
+            </p>
+          </div>
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
+        </div>
+
+        <!-- Khối 7 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">7</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Thời gian bảo hành</h3>
+            <p class="text-gray-600">
+              Bảo hành toàn diện 24 tháng từ khi triển khai.
+            </p>
+          </div>
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 left-full"></div>
+        </div>
+      </div>
+
+      <!-- Bên phải -->
+      <div class="space-y-8 relative">
+        <!-- Khối 2 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">2</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Tăng năng suất bán hàng</h3>
+            <p class="text-gray-600">
+              Giải pháp giúp nâng cao hiệu quả giao dịch, bán
+              hàng nhanh
+              chóng.
+            </p>
+          </div>
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
+        </div>
+
+        <!-- Khối 4 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">4</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Tốc độ thông báo tức thì</h3>
+            <p class="text-gray-600">
+              Hỗ trợ người dùng tối ưu hóa tốc độ xử lý.
+            </p>
+          </div>
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
+        </div>
+
+        <!-- Khối 6 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">6</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Giao dịch không mất phí</h3>
+            <p class="text-gray-600">Tiết kiệm chi phí cho doanh
+              nghiệp.</p>
+          </div>
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
+        </div>
+
+        <!-- Khối 8 -->
+        <div class="flex items-start space-x-4 relative">
+          <div class="text-red-500 font-bold text-lg flex-shrink-0">8</div>
+          <div class="bg-white rounded-lg shadow-md p-6 relative">
+            <h3 class="font-bold">Chất lượng thiết bị cao
+              cấp</h3>
+            <p class="text-gray-600">
+              Thiết bị cao cấp hỗ trợ mọi hoạt động bán hàng.
+            </p>
+          </div>
+          <div class="hidden md:block absolute w-8 h-1 bg-red-300 top-1/2 right-full"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer></footer>
+</body>
+
 </html>
