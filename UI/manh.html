@@ -1,21 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đường đứt đoạn với Tailwind</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="p-10 space-y-4">
-  <!-- Đường ngang -->
-  <div class="border-t-2 border-dashed border-gray-400"></div>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đường đứt đoạn theo tọa độ tùy ý</title>
+  </head>
+  <body>
+    <h1>Ví dụ đường nối đứt đoạn theo tọa độ</h1>
+    <svg width="500" height="500" style="border: 1px solid #ccc;">
+      <!-- Đường đứt đoạn nghiêng -->
+      <line x1="50" y1="50" x2="300" y2="23"
+        stroke="#b90417" stroke-width="2" stroke-dasharray="10,5" />
 
-  <!-- Đường dọc -->
-  <div class="border-l-2 border-dashed border-gray-400 h-32"></div>
-
-  <!-- Hộp có viền đứt đoạn -->
-  <div class="border-2 border-dashed border-blue-500 p-4">
-    Nội dung bên trong hộp
-  </div>
-</body>
+    </svg>
+  </body>
 </html>
