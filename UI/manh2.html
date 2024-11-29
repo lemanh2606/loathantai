@@ -1,88 +1,322 @@
-<!DOCTYPE html>
-<html lang="vi">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Footer Design</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body class="bg-gray-50">
+<style>
+    element.style {
+}
+@media (max-width: 768px) {
+    .right-form {
+        width: 100%;
+    }
+}
 
-        <footer class="bg-white py-8">
-            <div
-                class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-start px-4 md:px-16 space-y-6 md:space-y-0">
-                <!-- Left Section -->
-                <div
-                    class="flex flex-col items-center md:items-start text-center md:text-left">
-                    <!-- Logo -->
-                    <img src="/UI/img/icon.png" alt="Logo"
-                        class="w-20 mb-4">
-                    <!-- Address and Contact Info -->
-                    <p class="text-sm text-gray-700">
-                        Tổng công ty viễn thông MobiFone, số 01 phố Phạm Văn
-                        Bạch, Yên Hòa, Cầu Giấy, Hà Nội.
-                    </p>
-                    <div class="flex flex-col mt-4 space-y-2 text-sm">
-                        <p class="text-gray-700">
-                            <span class="font-medium">Số điện thoại hỗ
-                                trợ:</span>
-                            <br> 0904.111.016 &nbsp;|&nbsp; 0965.511.617
-                        </p>
-                        <p class="text-gray-700">
-                            <span class="font-medium">Email:</span> <br>
-                            loa.thantai@mobifone.vn
-                        </p>
-                    </div>
+@media (max-width: 768px) {
+    .right-form {
+        padding: 20px 20px !important;
+    }
+}
+.right-form {
+    border-radius: 10px;
+}
+.right-form {
+    width: 45%;
+    background: white;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+.left-content, .right-form {
+    width: 100%;
+}
+.right-form {
+    height: 100%;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+body, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'SVN';
+    margin: 0;
+    padding: 0;
+}
+</style>
+<div class="right-form">
+    <div class="p-5 d-flex flex-column justify-content-center">
+        <form>
+            <meta name="csrf-token"
+                content="cbVVpRfyY5GEdELHUs1QvAf4TTwgNfYMPa3LcREA">
+            <div class="mb-2">
+                <label for="name" class="form-label semi-bold">Họ và tên</label>
+                <div class="input-wrapper">
+                    <span class="red-asterisk">*</span>
+                    <input type="text" class="form-control" id="name"
+                        placeholder="Họ và Tên">
                 </div>
-
-                <!-- Right Section -->
-                <div class="flex flex-col items-center md:items-start">
-                    <!-- QR Code & Info -->
-                    <div
-                        class="bg-yellow-200 p-4 rounded-lg shadow-md text-center">
-                        <img src="/UI/img/logoqrcode.png" alt="QR Code">
-                        <p class="text-sm text-gray-800 mb-2">
-                            Quét mã và tải về ứng dụng <br>
-                            <span class="font-semibold">Loa Thần Tài MobiFone
-                                ngay</span>
-                        </p>
-                        <img src="/UI/img/qrcodefooter.png" alt="QR Code"
-                            class="w-24 mx-auto mb-4">
-                        <!-- App Store Links -->
-                        <div class="flex space-x-2">
-                            <img src="/UI/img/appStore.png" alt="App Store"
-                                class="w-24">
-                            <img src="/UI/img/googlePlay.png" alt="Google Play"
-                                class="w-24">
-                        </div>
-                    </div>
-
-                    <!-- Social Icons -->
-                    <div
-                        class="flex justify-center md:justify-start space-x-4 mt-4">
-                        <a href="#"
-                            class="w-8 h-8 bg-gray-200 flex items-center justify-center rounded-md shadow-sm">
-                            <img src="/UI/img/facebook.png" alt="Facebook"
-                                class="w-4">
-                        </a>
-                        <a href="#"
-                            class="w-8 h-8 bg-gray-200 flex items-center justify-center rounded-md shadow-sm">
-                            <img src="/UI/img/youtube.png" alt="YouTube"
-                                class="w-4">
-                        </a>
-                        <a href="#"
-                            class="w-8 h-8 bg-gray-200 flex items-center justify-center rounded-md shadow-sm">
-                            <img src="/UI/img/tiktok.png" alt="TikTok"
-                                class="w-4">
-                        </a>
-                        <a href="#"
-                            class="w-8 h-8 bg-gray-200 flex items-center justify-center  rounded-md shadow-sm">
-                            <img src="/UI/img/zalo.png" alt="Zalo" class="w-4">
-                        </a>
-                    </div>
-                </div>
+                <div class="error-message" id="name-error"
+                    style="display: none"></div>
             </div>
-        </footer>
-
-    </body>
-</html>
+            <div class="mb-2">
+                <label for="phone" class="form-label semi-bold">Số điện
+                    thoại</label>
+                <div class="input-wrapper">
+                    <span class="red-asterisk">*</span>
+                    <input class="form-control" id="phone"
+                        placeholder="Số điện thoại">
+                </div>
+                <div class="error-message" id="phone-error"
+                    style="display: none"></div>
+            </div>
+            <div class="mb-2">
+                <label for="province" class="form-label semi-bold">Tỉnh
+                    thành</label>
+                <div class="input-wrapper">
+                    <span class="red-asterisk red-asterisk-c">*</span>
+                    <select class="form-control select2-hidden-accessible"
+                        id="province" data-select2-id="select2-data-province"
+                        tabindex="-1" aria-hidden="true">
+                        <option value data-select2-id="select2-data-2-txhp">Chọn
+                            tỉnh thành</option>
+                        <option value="1" data-select2-id="select2-data-5-e3uk">
+                            HÀ NỘI</option>
+                        <option value="2" data-select2-id="select2-data-6-ayi3">
+                            TP.HỒ CHÍ MINH</option>
+                        <option value="3" data-select2-id="select2-data-7-jwia">
+                            HẢI PHÒNG</option>
+                        <option value="4" data-select2-id="select2-data-8-v0s1">
+                            ĐÀ NẴNG</option>
+                        <option value="5" data-select2-id="select2-data-9-4wi5">
+                            HÀ GIANG</option>
+                        <option value="6"
+                            data-select2-id="select2-data-10-dizd"> CAO
+                            BẰNG</option>
+                        <option value="7"
+                            data-select2-id="select2-data-11-8dqt"> LAI
+                            CHÂU</option>
+                        <option value="8"
+                            data-select2-id="select2-data-12-niap"> LÀO
+                            CAI</option>
+                        <option value="9"
+                            data-select2-id="select2-data-13-t4g5"> TUYÊN
+                            QUANG</option>
+                        <option value="10"
+                            data-select2-id="select2-data-14-4vfk"> LẠNG
+                            SƠN</option>
+                        <option value="11"
+                            data-select2-id="select2-data-15-yj9w"> BẮC
+                            KẠN</option>
+                        <option value="12"
+                            data-select2-id="select2-data-16-8sxr"> THÁI
+                            NGUYÊN</option>
+                        <option value="13"
+                            data-select2-id="select2-data-17-ad6f"> YÊN
+                            BÁI</option>
+                        <option value="14"
+                            data-select2-id="select2-data-18-219i"> SƠN
+                            LA</option>
+                        <option value="15"
+                            data-select2-id="select2-data-19-kip3"> PHÚ
+                            THỌ</option>
+                        <option value="16"
+                            data-select2-id="select2-data-20-ak5x"> VĨNH
+                            PHÚC</option>
+                        <option value="17"
+                            data-select2-id="select2-data-21-6n5j"> QUẢNG
+                            NINH</option>
+                        <option value="18"
+                            data-select2-id="select2-data-22-8lli"> BẮC
+                            GIANG</option>
+                        <option value="19"
+                            data-select2-id="select2-data-23-xvr4"> BẮC
+                            NINH</option>
+                        <option value="20"
+                            data-select2-id="select2-data-24-qnq0"> HẢI
+                            DƯƠNG</option>
+                        <option value="21"
+                            data-select2-id="select2-data-25-l6st"> HƯNG
+                            YÊN</option>
+                        <option value="22"
+                            data-select2-id="select2-data-26-95ww"> HÒA
+                            BÌNH</option>
+                        <option value="23"
+                            data-select2-id="select2-data-27-ho5p"> HÀ
+                            NAM</option>
+                        <option value="24"
+                            data-select2-id="select2-data-28-ma4q"> NAM
+                            ĐỊNH</option>
+                        <option value="25"
+                            data-select2-id="select2-data-29-q2s4"> THÁI
+                            BÌNH</option>
+                        <option value="26"
+                            data-select2-id="select2-data-30-h2nl"> NINH
+                            BÌNH</option>
+                        <option value="27"
+                            data-select2-id="select2-data-31-35jq"> THANH
+                            HÓA</option>
+                        <option value="28"
+                            data-select2-id="select2-data-32-kyy3"> NGHỆ
+                            AN</option>
+                        <option value="29"
+                            data-select2-id="select2-data-33-fjop"> HÀ
+                            TĨNH</option>
+                        <option value="30"
+                            data-select2-id="select2-data-34-f33n"> QUẢNG
+                            BÌNH</option>
+                        <option value="31"
+                            data-select2-id="select2-data-35-iofv"> QUẢNG
+                            TRỊ</option>
+                        <option value="32"
+                            data-select2-id="select2-data-36-2ubq"> THỪA THIÊN
+                            HUẾ</option>
+                        <option value="33"
+                            data-select2-id="select2-data-37-p51a"> QUẢNG
+                            NAM</option>
+                        <option value="34"
+                            data-select2-id="select2-data-38-bay6"> QUẢNG
+                            NGÃI</option>
+                        <option value="35"
+                            data-select2-id="select2-data-39-170n">
+                            KONTUM</option>
+                        <option value="36"
+                            data-select2-id="select2-data-40-you5"> BÌNH
+                            ĐỊNH</option>
+                        <option value="37"
+                            data-select2-id="select2-data-41-7l9v"> GIA
+                            LAI</option>
+                        <option value="38"
+                            data-select2-id="select2-data-42-q93m"> PHÚ
+                            YÊN</option>
+                        <option value="39"
+                            data-select2-id="select2-data-43-d1y8"> ĐĂK
+                            LĂK</option>
+                        <option value="40"
+                            data-select2-id="select2-data-44-cg4n"> KHÁNH
+                            HÒA</option>
+                        <option value="41"
+                            data-select2-id="select2-data-45-0p4f"> LÂM
+                            ĐỒNG</option>
+                        <option value="42"
+                            data-select2-id="select2-data-46-on9a"> BÌNH
+                            PHƯỚC</option>
+                        <option value="43"
+                            data-select2-id="select2-data-47-rzr8"> BÌNH
+                            DƯƠNG</option>
+                        <option value="44"
+                            data-select2-id="select2-data-48-6a7e"> NINH
+                            THUẬN</option>
+                        <option value="45"
+                            data-select2-id="select2-data-49-ij50"> TÂY
+                            NINH</option>
+                        <option value="46"
+                            data-select2-id="select2-data-50-59nx"> BÌNH
+                            THUẬN</option>
+                        <option value="47"
+                            data-select2-id="select2-data-51-81ji"> ĐỒNG
+                            NAI</option>
+                        <option value="48"
+                            data-select2-id="select2-data-52-zo2k"> LONG
+                            AN</option>
+                        <option value="49"
+                            data-select2-id="select2-data-53-ncxz"> ĐỒNG
+                            THÁP</option>
+                        <option value="50"
+                            data-select2-id="select2-data-54-xka2"> AN
+                            GIANG</option>
+                        <option value="51"
+                            data-select2-id="select2-data-55-htzl"> BÀ RỊA-VŨNG
+                            TÀU</option>
+                        <option value="52"
+                            data-select2-id="select2-data-56-g9ig"> TIỀN
+                            GIANG</option>
+                        <option value="53"
+                            data-select2-id="select2-data-57-vtq8"> KIÊN
+                            GIANG</option>
+                        <option value="54"
+                            data-select2-id="select2-data-58-pjv6"> CẦN
+                            THƠ</option>
+                        <option value="55"
+                            data-select2-id="select2-data-59-qu4u"> BẾN
+                            TRE</option>
+                        <option value="56"
+                            data-select2-id="select2-data-60-jfit"> VĨNH
+                            LONG</option>
+                        <option value="57"
+                            data-select2-id="select2-data-61-q6m3"> TRÀ
+                            VINH</option>
+                        <option value="58"
+                            data-select2-id="select2-data-62-ui42"> SÓC
+                            TRĂNG</option>
+                        <option value="59"
+                            data-select2-id="select2-data-63-nnnj"> BẠC
+                            LIÊU</option>
+                        <option value="60"
+                            data-select2-id="select2-data-64-4dte"> CÀ
+                            MAU</option>
+                        <option value="61"
+                            data-select2-id="select2-data-65-w7yk"> ĐIỆN
+                            BIÊN</option>
+                        <option value="62"
+                            data-select2-id="select2-data-66-cxqz"> ĐĂK
+                            NÔNG</option>
+                        <option value="63"
+                            data-select2-id="select2-data-67-msmw"> HẬU
+                            GIANG</option>
+                    </select><span
+                        class="select2 select2-container select2-container--default select2-container--below"
+                        dir="ltr" data-select2-id="select2-data-1-m9dm"
+                        style="width: 409.391px;"><span class="selection"><span
+                                class="select2-selection select2-selection--single"
+                                role="combobox" aria-haspopup="true"
+                                aria-expanded="false" tabindex="0"
+                                aria-disabled="false"
+                                aria-labelledby="select2-province-container"
+                                aria-controls="select2-province-container"><span
+                                    class="select2-selection__rendered"
+                                    id="select2-province-container"
+                                    role="textbox" aria-readonly="true"
+                                    title="Chọn tỉnh thành"><span
+                                        class="select2-selection__placeholder">Chọn
+                                        tỉnh thành</span></span><span
+                                    class="select2-selection__arrow"
+                                    role="presentation"><b
+                                        role="presentation"></b></span></span></span><span
+                            class="dropdown-wrapper"
+                            aria-hidden="true"></span></span>
+                </div>
+                <div class="error-message" id="province-error"
+                    style="display: none"></div>
+            </div>
+            <div class="mb-2">
+                <label for="message" class="form-label semi-bold">Lời
+                    nhắn</label>
+                <textarea class="form-control" id="message" rows="2"
+                    placeholder="Bạn muốn..."></textarea>
+            </div>
+            <div class="error-box" id="form-error" style="display: none;">
+                Báo lỗi hệ thống ở đây tối đa 2 dòng dài bằng từng này từng ngày
+                từng này
+            </div>
+            <button type="submit" class="btn btn-dark">Nhận tư vấn ngay</button>
+        </form>
+    </div>
+</div>
