@@ -6,67 +6,72 @@
         <title>Document</title>
     </head>
     <body>
-        <div
-            class="container lg:w-[1210px] lg:h-[618px]  top-[7128px] left-[355px] px-12 pt-12 pb-8 rounded-3xl bg-[#8A0F1C] gap-8 ">
+        <div class="grid place-items-center mx-9">
             <div
-                class=" text-white w-[508px]  gap-1 ">
-                <span
-                    class="block  o text-[32px] font-bold leading-[43px]">
-                    Kết nối với Loa Thần Tài MobiFone
-                </span>
-                <div class="text-[18px] leading-[24px] font-normal ">
-                    Giá <b class="font-extrabold">800.000đ</b>/Thiết bị (bao gồm
-                    sim data 4G)
+                class="container max-w-[1210px] min-w-[343px] max-h-[797px] lg:h-[618px] px-12 pt-12 pb-8 rounded-3xl bg-[#8A0F1C] gap-8 grid grid-cols-1 lg:grid-cols-2 overflow-hidden">
+
+                <!-- Left Section -->
+                <div
+                    class="text-white inline-block lg:w-[508px] max-w-[508px] lg:h-[72px] gap-1 ">
+                    <span class="block text-[32px] font-bold leading-[43px]">Kết
+                        nối với Loa Thần Tài MobiFone</span>
+                    <div class="text-[18px] leading-[24px] font-normal">
+                        Giá <b class="font-extrabold">800.000đ</b>/Thiết bị (bao
+                        gồm sim data 4G)
+                    </div>
                 </div>
+
+                <!-- Right Section (Image) -->
+                <div
+                    class="w-full lg:w-max lg:translate-y-[-47px] lg:translate-x-[-49px] translate-x-[205px] ">
+                    <img
+                        class="lg:w-full sm:w-[580px] sm:h-[800px] md:w-[896px] md:h-[800px] md:translate-y-[-190px] sm:translate-x-[-131px] sm:translate-y-[-139px] "
+                        src="/UI/img/dongxu2.png" alt="Loa Thần Tài MobiFone">
+                </div>
+
             </div>
 
-            <!-- <div class="w-[1114px] h-[434px] gap-[120px] flex justify-between"
-                style="transform: translate(0px, -907.5px); ">
-                <div>
+            <div
+                class="max-w-[1114px]  grid grid-cols-2 place-content-between lg:translate-y-[-450px] lg:translate-x-[5px] gap-[120px]">
+                <div class="px-8 pt-3">
                     <div
-                        class="form-container p-6 rounded-lg lg:w-[429px] md:h-[432px] md:translate-y-[449.33px] md:translate-x-[-25px] lg:translate-y-0">
+                        class="rounded-lg max-w-[429px] lg:w-[429px] lg:h-[372px]   lg:translate-y-0">
                         <form
-                            class="space-y-4 lg:w-[429px] lg:h-[434px] md:w-[559px] pb-8 lg:translate-x-[-28px] lg:translate-y-[-22px] ">
-                         
-                            <div class="w-full h-[64px]">
-                                <label for="name"
-                                    class="block text-white font-medium mb-2">*
-                                    Họ và
-                                    tên</label>
-                                <input
-                                    id="name"
-                                    type="text"
+                            class="inline-block space-y-4 lg:w-[429px] lg:h-[434px] md:w-[559px] pb-8 lg:translate-x-[-28px] lg:translate-y-[-22px]">
+
+                            <div class="w-full h-[64px] ">
+                                <label
+                                    for="name"
+                                    class="block text-white font-medium mb-2 w-full h-[20px] text-[15px] leading-[20px]"><span
+                                        class="text-[#F04438]">*</span>
+                                    Họ và tên</label>
+                                <input id="name" type="text"
                                     placeholder="Nhập họ và tên"
-                                    class="w-full bg-[#ffffff28] text-white placeholder-white border-none rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                    class="w-full h-[40px] bg-[#ffffff28] text-white placeholder-white border-none rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"
                                     required />
                             </div>
 
                             <div class="w-full h-[64px]">
                                 <label for="phone"
                                     class="block text-white font-medium mb-2">*
-                                    Số điện
-                                    thoại</label>
-                                <input
-                                    id="phone"
-                                    type="tel"
+                                    Số điện thoại</label>
+                                <input id="phone" type="tel"
                                     placeholder="Nhập số điện thoại"
-                                    class="w-full bg-[#FFFFFF21] text-white placeholder-white border-none rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                    class="w-full h-[40px] bg-[#FFFFFF21] text-white placeholder-white border-none rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500"
                                     required />
                             </div>
-
                             <script>
-                  function toggleDropdownIcon() {
-                    const dropdownIcon = document.getElementById("dropdown-icon");
-        
-       
-                    if (dropdownIcon.classList.contains("rotate-180")) {
-                      dropdownIcon.classList.remove("rotate-180");
-                    } else {
-                      dropdownIcon.classList.add("rotate-180");
-                    }
-                  }
-                </script>
-                       
+                                function toggleDropdownIcon() {
+                                  const dropdownIcon = document.getElementById("dropdown-icon");
+                      
+                                  // Toggle class "rotate-180" for the icon
+                                  if (dropdownIcon.classList.contains("rotate-180")) {
+                                    dropdownIcon.classList.remove("rotate-180");
+                                  } else {
+                                    dropdownIcon.classList.add("rotate-180");
+                                  }
+                                }
+                              </script>
                             <div class="relative w-full h-[64px]">
                                 <label for="city"
                                     class="block text-white font-medium mb-2">*
@@ -74,7 +79,7 @@
                                     thành</label>
                                 <select
                                     id="dropdown"
-                                    class="w-full bg-[#FFFFFF21] text-[#ffffff] placeholder-[#ffffff] border-none rounded-md px-4 py-3 appearance-none focus:outline-none focus:ring-2 focus:ring-red-500"
+                                    class="w-full h-[40px] bg-[#FFFFFF21] text-[#ffffff] placeholder-[#ffffff] border-none rounded-md px-4 py-2 appearance-none focus:outline-none focus:ring-2 focus:ring-red-500"
                                     onclick="toggleDropdownIcon()">
                                     <option value="1" class="text-black">HÀ
                                         NỘI</option>
@@ -203,9 +208,9 @@
                                     <option value="63" class="text-black">HẬU
                                         GIANG</option>
                                 </select>
-                               
+                                <!-- Mũi tên -->
                                 <div id="dropdown-icon"
-                                    class="absolute inset-y-0 right-4 flex items-center pointer-events-none transition-transform translate-y-6">
+                                    class="absolute inset-y-0 right-4 flex items-center pointer-events-none transition-transform translate-y-5">
                                     <svg xmlns="http://www.w3.org/2000/svg"
                                         class="h-4 w-4 text-white" fill="none"
                                         viewBox="0 0 24 24"
@@ -218,33 +223,27 @@
                                 </div>
                             </div>
 
-                          
                             <div class="w-full h-[120px]">
                                 <label for="message"
-                                    class="block text-white font-medium mb-2 w-full h">Lời
+                                    class="block text-white font-medium mb-2">Lời
                                     nhắn</label>
-                                <textarea
-                                    id="message"
-                                    rows="3"
+                                <textarea id="message" rows="3"
                                     placeholder="Bạn muốn..."
                                     class="w-full h-[96px] bg-[#FFFFFF21] text-white placeholder-white border-none rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"></textarea>
                             </div>
 
-                           
-                            <button
-                                type="submit"
-                                class="w-full bg-[#B90417] text-white font-bold rounded-md py-3 hover:bg-[#8f2222] transition">
-                                Nhận tư vấn ngay
-                            </button>
+                            <button type="submit"
+                                class="w-full  bg-[#B90417] text-white font-bold rounded-md py-3 hover:bg-[#8f2222] transition">Nhận
+                                tư vấn ngay</button>
                         </form>
                     </div>
                 </div>
-                <div
-                    class="lg:w-[565px] lg:h-[417px] md:w-[483.711px] md:h-[350.293px] md:translate-x-[-506.25px] md:translate-y-[900.5px] lg:translate-x-0 lg:translate-y-0">
-                    <img src="/UI/img/thantai3.png">
-                </div>
-            </div> -->
 
+                <div>
+                    <img src="/UI/img/thantai3.png" alt="Thần Tài Image">
+                </div>
+            </div>
         </div>
+
     </body>
 </html>
