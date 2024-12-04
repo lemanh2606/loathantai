@@ -8,67 +8,269 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white" data-spy="scroll" data-target=".fixed-top">
+<body class="bg-white " data-spy="scroll" data-target=".fixed-top">
 
     <header class="w-screen fixed z-30 bg-[#FFFFFFE5] backdrop-blur-md grid place-items-center mb-[100px]">
-    <div
-        class="md:container w-screen lg:h-[96px] h-[80px] flex  lg:justify-center justify-between items-center lg:text-center mx-auto p-4 md:p-6 lg:p-4 xl:gap-[130.42px] ">
-        <!-- Logo -->
-        <div >
-            <a>
-                <img class="xl:w-[64.16pxpx] xl:h-[64px] lg:w-[64px] lg:h-[64px] sm:w-[56.14px] sm:h-[56px] w-[48.12px] h-[48px] " src="/UI/img/icon.png" alt="logo" />
-            </a>
+        <div
+            class="lg:container w-screen xl:w-[1212px] lg:h-[96px] h-[80px] flex  xl:justify-between justify-between items-center lg:text-center  lg:mx-0 p-4 md:p-6 lg:p-4 xl:p-0 ">
+            <!-- Logo -->
+            <div>
+                <a>
+                    <img class="lg:w-[64.16px] lg:h-[64px]   sm:w-[56px] sm:h-[56px] w-[48px] h-[48px]   "
+                        src="/UI/img/icon.png" alt="logo" />
+                </a>
+            </div>
+
+            <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+            <!-- Navigation Menu -->
+            <nav
+                class=" hidden xl:w-[762px] xl:h-[38px]  bg-white peer-checked:block  lg:flex lg:flex-row lg:items-center w-full lg:w-auto lg:static absolute top-full left-0 lg:top-auto  lg:bg-transparent lg:shadow-none shadow-md lg:p-4 xl:p-0 ">
+                <ul
+                    class="list-none flex flex-col lg:flex-row gap-1 xl:gap-2 xl:w-[762px] xl:h-[38px]  lg:w-[762px]  lg:justify-between lg:items-center lg:text-center  ">
+                    <li
+                        class=" w-full xl:w-[204px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition lg:flex lg:text-center  border-b-[0.1px] border-solid border-[#EBEDEF] lg:border-b-0 p-6">
+                        <a href="#">
+                            <div
+                                class="lg:w-[172px] lg:h-[22px] text-[16px] font-bold font-[Font/Family] leading-[21.82px]">
+                                Loa thần tài Mobifone</div>
+                        </a>
+                    </li>
+                    <li
+                        class="w-full  xl:w-[145px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
+                        <a href="#">
+                            <div
+                                class=" lg:w-[119px] lg:h-[22px]text-[16px] font-bold font-[Font/Family] leading-[21.82px]   ">
+                                Cách hoạt động</div>
+                        </a>
+                    </li>
+                    <li
+                        class="w-full  xl:w-[92px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
+                        <a href="#">
+                            <div
+                                class="lg:w-[70px] lg:h-[22px] text-[16px] font-bold font-[Font/Family] leading-[21.82px]  lg:flex lg:text-center ">
+                                Ưu điểm</div>
+                        </a>
+                    </li>
+                    <li
+                        class="w-full  xl:w-[100px] xl:h-[38px] xl:rounded-[100px] h-[54px]   lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
+                        <a href="#">
+                            <div
+                                class="lg:w-[79px] lg:h-[22px] text-[16px] font-bold font-[Font/family] leading-[21.82px]  lg:flex lg:text-center">
+                                Giải pháp</div>
+                        </a>
+                    </li>
+                    <li
+                        class="w-full  xl:w-[117px] xl:h-[38px] xl:rounded-[100px] h-[54px]   lg:px-4 py-2 rounded  lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] e transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
+                        <a href="#">
+                            <div
+                                class="lg:w-[90px] lg:h-[22px] text-[16px] font-bold font-[Font/family] leading-[21.82px] lg:flex lg:text-center">
+                                Khách hàng</div>
+                        </a>
+                    </li>
+                    <li
+                        class="w-full  xl:w-[64px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
+                        <a href="#">
+                            <div class="text-[16px] font-bold font-[Font/Family] leading-[21.82px] ">FAQ</div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Button "Nhận tư vấn" (Vẫn luôn hiển thị) -->
+            <div
+                class="flex w-[154px] h-[36px] sm:w-[189px] sm:h-[40px] lg:w-[125px] lg:h-[40px] gap-3 sm:gap-6 lg:pr-0 pr-2">
+                <button
+                    class="sm:w-[125px] sm:h-[40px] w-[106px]  h-[36px] rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
+                    Nhận tư vấn
+                </button>
+                <!-- Toggle Menu Button -->
+                <label for="menu-toggle" class="lg:hidden cursor-pointer">
+                    <img src="/UI/img/navtoggle.png" alt="Menu Toggle" class="sm:w-12 sm:h-10 w-9 h-9" />
+                </label>
+            </div>
+
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+    </header>
 
-        <!-- Navigation Menu -->
-        <nav
-            class=" hidden  bg-white peer-checked:block  lg:flex lg:flex-row lg:items-center w-full lg:w-auto lg:static absolute top-full left-0 lg:top-auto  lg:bg-transparent lg:shadow-none shadow-md lg:p-4 ">
-            <ul class="list-none flex flex-col lg:flex-row gap-1 xl:gap-2 xl:w-[762px] xl:h-[38px]   lg:justify-between lg:items-center lg:text-center  ">
-                <li
-                    class="w-full xl:w-[204px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition lg:flex lg:text-center  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
-                    <a href="#">
-                        <div class="lg:w-[172px] lg:h-[22px] text-[16px] font-bold font-[Font/Family] leading-[21.82px]">Loa thần tài Mobifone</div></a>
-                </li>
-                <li
-                    class="w-full  xl:w-[145px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded   hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
-                    <a href="#"> <div  class=" lg:w-[119px] lg:h-[22px]text-[16px] font-bold font-[Font/Family] leading-[21.82px]   ">Cách hoạt động</div></a>
-                </li>
-                <li
-                    class="w-full  xl:w-[92px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
-                    <a href="#"> <div  class="lg:w-[70px] lg:h-[22px] text-[16px] font-bold font-[Font/Family] leading-[21.82px]  lg:flex lg:text-center ">Ưu điểm</div></a>
-                </li>
-                <li
-                    class="w-full  xl:w-[100px] xl:h-[38px] xl:rounded-[100px] h-[54px]   lg:px-4 py-2 rounded  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
-                    <a href="#"><div  class="lg:w-[79px] lg:h-[22px] text-[16px] font-bold font-[Font/family] leading-[21.82px]  lg:flex lg:text-center">Giải pháp</div></a>
-                </li>
-                <li
-                    class="w-full  xl:w-[117px] xl:h-[38px] xl:rounded-[100px] h-[54px]   lg:px-4 py-2 rounded  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
-                    <a href="#"> <div  class="lg:w-[90px] lg:h-[22px] text-[16px] font-bold font-[Font/family] leading-[21.82px] lg:flex lg:text-center">Khách hàng</div></a>
-                </li>
-                <li
-                    class="w-full  xl:w-[64px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-white transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6">
-                    <a href="#"><div class="text-[16px] font-bold font-[Font/Family] leading-[21.82px] ">FAQ</div> </a>
-                </li>
-            </ul>
-        </nav>
+    <div class=" lg:justify-center items-center  grid xl:flex ">
+        <div class="flex flex-col items-start space-y-6 px-10 py-5 h-[673.938px] transform translate-y-[174.666px]">
+            <div
+                class="lg:w-[483px] lg:h-[156px] opacity-100 font-bold text-4xl leading-tight text-left w-auto h-auto md:w-[auto] md:h-[100px]">
+                Giải pháp Loa sử dụng công nghệ AI hỗ trợ rảnh tay bán hàng
+            </div>
+            <div class="lg:w-[500px] lg:h-[112px] opacity-100 font-semibold lg:text-lg leading-7 text-left  w-auto h-auto sm:text-md md:text-md text-xs "
+                style="height: 129px; transform: translate(0px, -17px)">
+                Loa Thần tài MobiFone là giải pháp phát âm thanh bằng giọng
+                nói ứng dụng công nghệ trí tuệ nhân tạo của
+                MobiFone. Nhằm thông báo chính xác kết quả trong từng giao
+                dịch thanh toán thành công. Giúp người bán rảnh tay
+                bán hàng, nhận tiền nhanh chóng và an toàn.
+            </div>
+            <div class="flex space-x-8 xs:transition-none xs:h-[58px]  xs:translate-x-0 xs:translate-y-[103.816px]"
+                style="height: 40.0861px; transform: translate(0px, 50.3007px); transition: none;">
+                <button
+                    class="flex items-center justify-center  lg:w-[188px] lg:h-[56px] md:h-[45px] md:w-[190px] sm:h-[40px] sm:w-[150px] w-[150px]  px-5 py-2 rounded-full border border-[#B90417]  bg-[#B90417] text-black text-sm font-bold   ">
+                    <div
+                        style="width: 16.6667px; height: 8.88889px; border-top: 5px solid transparent; border-left: 10px solid rgb(255, 255, 255); border-bottom: 5px solid transparent; transform: translate(-6.66669px, 0px);">
 
-        <!-- Button "Nhận tư vấn" (Vẫn luôn hiển thị) -->
-        <div class="flex w-[154px] h-[36px] sm:w-[189px] sm:h-[40px] gap-3 sm:gap-6 ">
-            <button
-                class="sm:w-[125px] sm:h-[40px] w-[106px]  h-[36px] rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
-                Nhận tư vấn
-            </button>
-            <!-- Toggle Menu Button -->
-            <label for="menu-toggle" class="lg:hidden cursor-pointer">
-                <img src="/UI/img/navtoggle.png" alt="Menu Toggle" class="sm:w-12 sm:h-10 w-9 h-9" />
-            </label>
+                    </div>
+                    <p class="text-white">Nghe thử loa</p>
+                </button>
+                <button
+                    class="text-center items-center justify-center flex lg:w-[195px] lg:h-[56px] md:h-[45px] md:w-[190px] sm:h-[40px] sm:w-[150px] w-[120px] px-4  rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
+                    <p class="text-center"> Nhận tư vấn</p>
+
+                </button>
+            </div>
+        </div>
+        <div class="px-10 py-5 lg:h-[478.941px]  transform lg:translate-y-[15.6662px]  ">
+            <img src="/UI/img/thantai.png" alt="image1"
+                class="w-[500px] h-[250px] sm:w-[700px] sm:h-[500px]  opacity-100 lg:h-[509.297px] lg:w-[708.688px] transform lg:translate-y-[20px]" />
+        </div>
+    </div>
+
+
+    <div class="w-screen lg:h-[1669px] h-[1669px] lg:top-[1658px] bg-[#F9F9F9] mb-[300px] grid place-items-center ">
+        <div
+            class="lg:w-[532px] lg:h-[44px] top-[80px]b  font-[Font/Family] font-bold text-[32px] leading-[43.65px] flex text-center justify-center">
+            8 lý do chọn thần tài Mobifone</div>
+        <div class="w-[90%] flex justify-center gap-1 mx-auto">
+            <div class="gap-6 space-y-10 pt-12">
+                <div class="lg:w-[491px] lg:h-[222px] top-[274px] left-[354px] rounded-[20px] py-8 pr-12 pl-8 gap-6 bg-[#FFFFFF] "
+                    style="box-shadow: 0px 10px 30px 0px #0000000D;">
+                    <div><img class="lg:h-[48px] lg:w-[48px]" src="/UI/img/ic1.png"></div>
+                    <div class="lg:w-[411px] lg:h-[86px] gap-3 mt-6 grid">
+                        <div
+                            class="lg:w-[411px] lg:h-[26px] font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">
+                            Phòng tránh gian lận</div>
+                        <div
+                            class="w-auto lg:h-[48px] font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]">
+                            Kiểm soát tuyệt đối các giao dịch, phòng ngừa thất thoát khi giao dịch</div>
+                         
+                    </div>
+                    <img class="absolute translate-y-[-100px] translate-x-[435px] z-20" src="/UI/img/nu1.png">
+                  
+                </div>
+                <div class="lg:w-[491px] lg:h-[489px] top-[536px] left-[354px] rounded-[20px] gap-8 pt-8 pl-8 bg-[#FFFFFF] row-span-2"
+                    style="box-shadow: 0px 10px 30px 0px #0000000D;">
+                    <div class="lg:w-[459px] lg:h-[158px] pr-[48px] gap-6"><img class="lg:h-[48px] lg:w-[48px]"
+                            src="/UI/img/ic2.png">
+                        <div class="lg:w-[411px] lg:h-[86px] gap-3 mt-6 grid">
+                            <div class="font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">Giải
+                                pháp đa nền tảng</div>
+                            <div class="font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]">Tiện
+                                dụng, dễ dàng sử dụng và quản lý doanh thu qua các giao diện App Mobile, Website
+                                cho người dùng
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-[459px] lg:h-[267px] gap-8 flex mt-8 overflow-hidden">
+                        <img class="lg:w-[182px] lg:h-[393.4px] rounded-[16px]"
+                            style="box-shadow: 0px 10px 30px 0px #0000001A; border: 1px solid var(--Global-Neutral-92, #EBEDEF)"
+                            src="/UI/img/image 70.png">
+                        <img class="lg:w-[182px] lg:h-[393.4px] rounded-[16px]"
+                            style="box-shadow: 0px 10px 30px 0px #0000001A; border: 1px solid var(--Global-Neutral-92, #EBEDEF)"
+                            src="/UI/img/image 69.png" alt="">
+                    </div>
+                    <img class="absolute translate-y-[-270px] translate-x-[435px] z-20" src="/UI/img/nu2.png">
+                </div>
+                <div class="lg:w-[491px] lg:h-[222px] top-[274px] left-[354px] rounded-[20px] py-8 pr-12 pl-8 gap-6 bg-[#FFFFFF] "
+                    style="box-shadow: 0px 10px 30px 0px #0000000D;">
+                    <div><img class="lg:h-[48px] lg:w-[48px]" src="/UI/img/ic3.png"></div>
+                    <div class="lg:w-[411px] lg:h-[86px] gap-3 grid mt-6">
+                        <div class="font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">Kết nối
+                            mọi lúc mọi nơi</div>
+                        <div class="font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]">Kết nới
+                            tốc độ cao mạng thông qua Wifi/4G/5G mạng MobiFone</div>
+                    </div>
+                    <img class="absolute translate-y-[-100px] translate-x-[435px] z-20" src="/UI/img/nu3.png">
+                </div>
+                <div class="lg:w-[491px] lg:h-[222px] top-[274px] left-[354px] rounded-[20px] py-8 pr-12 pl-8 gap-6 bg-[#FFFFFF] "
+                    style="box-shadow: 0px 10px 30px 0px #0000000D;">
+                    <div><img class="lg:h-[48px] lg:w-[48px]" src="/UI/img/ic4.png"></div>
+                    <div class="lg:w-[411px] lg:h-[86px] gap-3 grid mt-6">
+                        <div class="font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">Thời gian
+                            bảo hành</div>
+                        <div class="font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]"> Gói bảo
+                            hành <span class="font-extrabold text-[#B90417]">24 tháng</span> duy nhất trên thị trường
+                        </div>
+                    </div>
+                    <img class="absolute translate-y-[-100px] translate-x-[435px] z-20" src="/UI/img/nu4.png">
+                </div>
+            </div>
+            <div class="w-auto lg:w-[232.5px] lg:h-[1141px]  translate-x-[0px] relative ">
+                <div class="mt-5 w-full h-0.5 border-t-2 border-dashed border-red-500 transform rotate-[-15deg] fixed z-10 -translate-x-12 -translate-y-4"
+                style="top: 12%; left: 20%;">
+            </div>
+          
+         
+          
+     
+            <svg width="auto" height="auto" viewBox="0 0 238 1144" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M235 1.5L2.5 89L235 264L2.5 486.5L235 537.5L2.5 879.5L235 974.5L2.5 1142.5" stroke="#B7041A" stroke-width="2" stroke-linecap="round" stroke-dasharray="4 8"/>
+                </svg>
+                
+                  
+            </div>
+            <div class="gap-6 space-y-10 ">
+                <div class="lg:w-[491px] lg:h-[222px] top-[274px] left-[354px] rounded-[20px] py-8 pr-12 pl-8 gap-6 bg-[#FFFFFF] "
+                    style="box-shadow: 0px 10px 30px 0px #0000000D;">
+                    <div><img class="lg:h-[48px] lg:w-[48px]" src="/UI/img/ic5.png"></div>
+                    <div class="lg:w-[411px] lg:h-[86px] gap-3 grid mt-6">
+                        <div class="font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">Tăng năng
+                            suất bán hàng</div>
+                        <div class="font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]">Giải
+                            pháp cho mọi cửa hàng giúp quản lý giao dịch thanh toán an toàn, hiệu quả, rảnh tay
+                            khi bán hàng</div>
+                    </div>
+                    <img class="absolute translate-y-[-100px] translate-x-[-55px] z-20" src="/UI/img/nu5.png">
+                </div>
+
+                <div class="lg:w-[491px] lg:h-[222px] top-[274px] left-[354px] rounded-[20px] py-8 pr-12 pl-8 gap-6 bg-[#FFFFFF] row-span-1"
+                    style="box-shadow: 0px 10px 30px 0px #0000000D;">
+                    <div><img class="lg:h-[48px] lg:w-[48px]" src="/UI/img/ic6.png"></div>
+                    <div class="lg:w-[411px] lg:h-[86px] gap-3 grid mt-6">
+                        <div class="font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">Tốc độ
+                            thông báo tức thời</div>
+                        <div class="font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]">Loa
+                            thông báo kết quả giao dịch tức thời sau khi nhận chuyển khoản</div>
+                    </div>
+                    <img class="absolute translate-y-[-100px] translate-x-[-55px] z-20" src="/UI/img/nu6.png">
+                </div>
+                <div class="lg:w-[491px] lg:h-[246px] top-[274px] left-[354px] rounded-[20px] py-8 pr-12 pl-8 gap-6 bg-[#FFFFFF] "
+                    style="box-shadow: 0px 10px 30px 0px #0000000D;">
+                    <div><img class="lg:h-[48px] lg:w-[48px]" src="/UI/img/ic7.png"></div>
+                    <div class="lg:w-[411px] lg:h-[110px] gap-3 grid mt-6">
+                        <div class="font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">Giao dịch
+                            không mất phí</div>
+                        <div class="font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]">Tiền vào
+                            ngay tài khoản của chủ cửa hàng khi quét QRCode thành công, không mất thêm bước
+                            rút tiền từ ví, phòng tránh lừa đảo</div>
+                    </div>
+                    <img class="absolute translate-y-[-110px] translate-x-[-55px] z-20" src="/UI/img/n7.png">
+                </div>
+
+                <div class="lg:w-[491px] lg:h-[542.52px] top-[998px] left-[1075px] rounded-[20px] py-8 pr-12 pl-8 gap-6 bg-[#FFFFFF] row-span-2 "
+                    style="box-shadow: 0px 10px 30px 0px #0000000D; ">
+                    <div><img class="lg:h-[48px] lg:w-[48px]" src="/UI/img/ic8.png"></div>
+                    <div class="lg:w-[411px] lg:h-[86px] gap-3 grid mt-6">
+                        <div class="font-[Font/Family] font-bold text-[20px] leading-[26.4px] text-[#17191C]">Chất lượng
+                            thiết bị cao cấp</div>
+                        <div class="font-[Font/Family] font-normal text-[17px] leading-[23.8px] text-[#17191C]">Thiết kế
+                            hiện đại tinh tế, dễ lắp đặt, phù hợp với mọi không gian kinh doanh</div>
+                    </div>
+                    <div class="mt-6 ml-4">
+                        <img src="/UI/img/thantai4.png" alt="">
+                    </div>
+                    <img class="absolute translate-y-[-255px] translate-x-[-55px] z-20" src="/UI/img/nu8.png">
+                </div>
+            </div>
+
         </div>
 
     </div>
-
-</header>
 
     <footer>
         <div
@@ -83,16 +285,20 @@
                             <img class="w-[80.2px] h-[80px] pr-1" src="/UI/img/icon2.png" alt="logo" />
                         </a>
                     </div>
-                    <div class="xl:w-[512px] xl:h-[165px] sm:w-[362px] sm:h-[163px] w-[343px] h-[146px]  sm:gap-4   gap-6 mt-8 ">
+                    <div
+                        class="xl:w-[512px] xl:h-[165px] sm:w-[362px] sm:h-[163px] w-[343px] h-[146px]  sm:gap-4   gap-6 mt-8 ">
 
-                        <div class="lg:w-[512px] lg:h-[48px] sm:w-[362px] sm:h-[64px] w-[343px] h-[62px] gap-2 flex justify-center ">
+                        <div
+                            class="lg:w-[512px] lg:h-[48px] sm:w-[362px] sm:h-[64px] w-[343px] h-[62px] gap-2 flex justify-center ">
 
                             <img class="w-6 h-6" src="/UI/img/iconoir_map-pin.png">
 
                             <div
                                 class="lg:w-[480px] lg:h-[48px]  pt-1 gap-2 w-[315px] h-[62px]  text-[16px] font-normal leading-[21.82px] ">
-                                Tổng công ty viễn thông Mobifone số 01
-                                phố Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà
+                                Tổng công ty viễn thông Mobifone số
+                                01
+                                phố Phạm Văn Bạch, Yên Hòa, Cầu
+                                Giấy, Hà
                                 Nội</div>
                         </div>
                         <div class="lg:w-[512px] lg:h-[45px] w-[343px] h-[40px]  gap-2 flex mt-6">
@@ -129,18 +335,21 @@
 
                 </div>
 
-                <div class=" gap-6 lg:w-[430px] w-[343px] h-[303px] lg:h-[300px]  sm:w-[310px] sm:h-[282px] translate-y-[44px] sm:translate-y-0">
+                <div
+                    class=" gap-6 lg:w-[430px] w-[343px] h-[303px] lg:h-[300px]  sm:w-[310px] sm:h-[282px] translate-y-[44px] sm:translate-y-0">
 
                     <div
                         class="lg:w-[430px] lg:h-[220px] sm:w-[310px] sm:h-[206px] w-[343px] h-[223px]  p-[20px]  sm:mt-6 bg-[#E0B452]   rounded-[16px] sm:rounded-[20px] lg:p-6 gap-4 grid grid-cols-1">
 
-                        <div class="lg:w-[382px] lg:h-[108px] sm:w-[270px] sm:h-[110px] w-[303px] h-[119px] bottom-[1px] sm:bottom-0 gap-4 sm:gap-0 flex justify-between">
+                        <div
+                            class="lg:w-[382px] lg:h-[108px] sm:w-[270px] sm:h-[110px] w-[303px] h-[119px] bottom-[1px] sm:bottom-0 gap-4 sm:gap-0 flex justify-between">
                             <div class="lg:w-[274px] lg:h-[92px] ">
                                 <img class="w-7 h-7 " src="/UI/img/logoqrcode.png" alt="QR Code">
                                 <div
                                     class="lg:w-[274px] lg:h-[54px] sm:w-[162px] sm:h-[94px] sm:text-[16px]  sm:leading-[21.82px] w-[195px] h-[75px] text-[18px] leading-[24.55px] lg:leading-[27.28px] font-normal   text-[#17191C] font-[Font/Family] lg:text-[20px] absolute translate-y-[10px]">
                                     Quét mã và tải về ứng dụng
-                                    <span class=" font-extrabold">Loa Thần
+                                    <span class=" font-extrabold">Loa
+                                        Thần
                                         Tài MobiFone</span>
                                     ngay
                                 </div>
@@ -148,15 +357,21 @@
                             <img src="/UI/img/qrcodefooter.png " alt="QR Code" class="w-[92px] h-[92px]">
 
                         </div>
-                        <div class="lg:w-[382px] lg:h-[48px] sm:w-[270px] sm:h-[40px] w-[303px] h-[48px] gap-4 grid grid-cols-2 sm:space-x-0 md:space-x-0">
-                            <img class="lg:w-[183px]  lg:h-[48px] sm:w-[127px] sm:h-[40px] w-[143.5px] h-[48px]  gap-2  rounded-md border-2 border-solid  border-black"
-                                src=" /UI/img/appStore.png" alt="App Store" class="w-24">
-                            <img class="lg:w-[183px]  lg:h-[48px] sm:w-[127px] sm:h-[40px] w-[143.5px] h-[48px]  gap-2  rounded-md border-2 border-solid  border-black"
-                                src="/UI/img/googlePlay.png" alt="Google Play" class="w-24">
+                        <div
+                            class="lg:w-[382px] lg:h-[48px] sm:w-[270px] sm:h-[40px] w-[303px] h-[48px] gap-4 grid grid-cols-2 sm:space-x-0 md:space-x-0">
+                            <a href="#"> <img
+                                    class="lg:w-[183px]  lg:h-[48px] sm:w-[127px] sm:h-[40px] w-[143.5px] h-[48px]  gap-2  rounded-md border-solid  border-black"
+                                    src=" /UI/img/appStore.png" alt="App Store" class="w-24">
+                            </a>
+                            <a href="#"> <img
+                                    class="lg:w-[183px]  lg:h-[48px] sm:w-[127px] sm:h-[40px] w-[143.5px] h-[48px]  gap-2  rounded-md  border-solid  border-black"
+                                    src="/UI/img/googlePlay.png" alt="Google Play" class="w-24"></a>
+
                         </div>
                     </div>
 
-                    <div class="lg:w-[284px] lg:h-[56px] sm:w-[310px] sm:h-[56px] w-[343px] h-[56px] md:gap-5 md:top-1px md:flex  mt-6 sm:grid sm:grid-cols-4 grid grid-cols-4 gap-4">
+                    <div
+                        class="lg:w-[284px] lg:h-[56px] sm:w-[310px] sm:h-[56px] w-[343px] h-[56px] md:gap-5 md:top-1px md:flex  mt-6 sm:grid sm:grid-cols-4 grid grid-cols-4 gap-4">
                         <div
                             class="lg:w-14 lg:h-14  sm:w-[62.5px] sm:h-[56px] w-[73.5px]   h-14 gap-2 rounded-md flex items-center justify-center bg-[#EBEDEF]">
                             <a href="#"
@@ -185,7 +400,8 @@
                             <a href="#"
                                 class="w-8 h-8 bg-gray-200 flex items-center justify-center  rounded-md shadow-sm">
                                 <img src="/UI/img/zalo.png" alt="Zalo" class="w-6">
-                            </a></div>
+                            </a>
+                        </div>
 
                     </div>
                 </div>
