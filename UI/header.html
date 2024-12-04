@@ -24,43 +24,51 @@
 
                 <input type="checkbox" id="menu-toggle" class="hidden peer" />
                 <script>
-                    //mã code typescrip
-// function setActive(element: HTMLElement, key: string): void {
-//   // Lưu key của mục được chọn vào Local Storage
-//   localStorage.setItem('activeNavItem', key);
+          //mã code typescrip
+          // function setActive(element: HTMLElement, key: string): void {
+          //   // Lưu key của mục được chọn vào Local Storage
+          //   localStorage.setItem('activeNavItem', key);
 
-//   // Xóa trạng thái active khỏi tất cả các mục
-//   const items = document.querySelectorAll<HTMLElement>('.nav-item');
-//   items.forEach(item => item.classList.remove('text-[#B90417]', 'font-bold'));
+          //   // Xóa trạng thái active khỏi tất cả các mục
+          //   const items = document.querySelectorAll<HTMLElement>('.nav-item');
+          //   items.forEach(item => item.classList.remove('text-[#B90417]', 'font-bold'));
 
-//   // Thêm trạng thái active cho mục được chọn
-//   element.classList.add('text-[#B90417]', 'font-bold');
-// }
+          //   // Thêm trạng thái active cho mục được chọn
+          //   element.classList.add('text-[#B90417]', 'font-bold');
+          // }
 
-// function restoreActiveNavItem(): void {
-//   const savedKey = localStorage.getItem('activeNavItem');
-//   if (savedKey) {
-//     const activeItem = document.querySelector<HTMLElement>(`.nav-item[data-key="${savedKey}"]`);
-//     if (activeItem) {
-//       activeItem.classList.add('text-[#B90417]', 'font-bold');
-//     }
-//   }
-// }
+          // function restoreActiveNavItem(): void {
+          //   const savedKey = localStorage.getItem('activeNavItem');
+          //   if (savedKey) {
+          //     const activeItem = document.querySelector<HTMLElement>(`.nav-item[data-key="${savedKey}"]`);
+          //     if (activeItem) {
+          //       activeItem.classList.add('text-[#B90417]', 'font-bold');
+          //     }
+          //   }
+          // }
 
-// // Gọi hàm khôi phục khi trang load
-// window.onload = restoreActiveNavItem;
-
-
+          // // Gọi hàm khôi phục khi trang load
+          // window.onload = restoreActiveNavItem;
 
           function setActive(element, key) {
             localStorage.setItem("activeNavItem", key);
 
             const items = document.querySelectorAll(".nav-item");
             items.forEach((item) =>
-              item.classList.remove("text-[#B90417]", "font-bold","bg-[#FFF0F2]","lg:bg-white")
+              item.classList.remove(
+                "text-[#B90417]",
+                "font-bold",
+                "bg-[#FFF0F2]",
+                "lg:bg-white"
+              )
             );
 
-            element.classList.add("text-[#B90417]", "font-bold","bg-[#FFF0F2]","lg:bg-white");
+            element.classList.add(
+              "text-[#B90417]",
+              "font-bold",
+              "bg-[#FFF0F2]",
+              "lg:bg-white"
+            );
           }
 
           function restoreActiveNavItem() {
@@ -70,7 +78,12 @@
                 `.nav-item[data-key="${savedKey}"]`
               );
               if (activeItem) {
-                activeItem.classList.add("text-[#B90417]", "font-bold","bg-[#FFF0F2]","lg:bg-white");
+                activeItem.classList.add(
+                  "text-[#B90417]",
+                  "font-bold",
+                  "bg-[#FFF0F2]",
+                  "lg:bg-white"
+                );
               }
             }
           }
