@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,88 +8,123 @@
     </head>
 
     <body class="bg-white" data-spy="scroll" data-target=".fixed-top">
-
         <header
             class="w-screen fixed z-30 bg-[#FFFFFFE5] backdrop-blur-md grid place-items-center mb-[100px]">
             <div
-                class="lg:container w-screen xl:w-[1212px] lg:h-[96px] h-[80px] flex  xl:justify-between justify-between items-center lg:text-center  lg:mx-0 p-4 md:p-6 lg:p-4 xl:p-0 ">
+                class="lg:container w-screen xl:w-[1212px] lg:h-[96px] h-[80px] flex xl:justify-between justify-between items-center lg:text-center lg:mx-0 p-4 md:p-6 lg:p-4 xl:p-0">
                 <!-- Logo -->
                 <div>
                     <a>
                         <img
-                            class="lg:w-[64.16px] lg:h-[64px]   sm:w-[56px] sm:h-[56px] w-[48px] h-[48px]   "
-                            src="/UI/img/icon.png" alt="logo" />
+                            class="lg:w-[64.16px] lg:h-[64px] sm:w-[56px] sm:h-[56px] w-[48px] h-[48px]"
+                            src="/UI/img/icon.png"
+                            alt="logo" />
                     </a>
                 </div>
 
                 <input type="checkbox" id="menu-toggle" class="hidden peer" />
                 <script>
-                    function setActive(element) {
-  // Xóa class "active" khỏi tất cả các mục
-  const items = document.querySelectorAll('.nav-item');
-  items.forEach(item => item.classList.remove('text-[#B90417]', 'font-bold'));
+          // Hàm thiết lập mục được chọn
+          function setActive(element, key) {
+            // Lưu key của mục được chọn vào Local Storage
+            localStorage.setItem("activeNavItem", key);
 
-  // Thêm class "active" vào mục được nhấp
-  element.classList.add('text-[#B90417]', 'font-bold');
-}
-                </script>
+            // Xóa trạng thái active khỏi tất cả các mục
+            const items = document.querySelectorAll(".nav-item");
+            items.forEach((item) =>
+              item.classList.remove("text-[#B90417]", "font-bold")
+            );
+
+            // Thêm trạng thái active cho mục được chọn
+            element.classList.add("text-[#B90417]", "font-bold");
+          }
+
+          // Hàm kiểm tra và khôi phục trạng thái khi load lại trang
+          function restoreActiveNavItem() {
+            const savedKey = localStorage.getItem("activeNavItem");
+            if (savedKey) {
+              const activeItem = document.querySelector(
+                `.nav-item[data-key="${savedKey}"]`
+              );
+              if (activeItem) {
+                activeItem.classList.add("text-[#B90417]", "font-bold");
+              }
+            }
+          }
+
+          // Gọi hàm khôi phục khi trang load
+          window.onload = restoreActiveNavItem;
+        </script>
 
                 <!-- Navigation Menu -->
                 <nav
-                    class=" hidden xl:w-[762px] xl:h-[38px]  bg-white peer-checked:block  lg:flex lg:flex-row lg:items-center w-full lg:w-auto lg:static absolute top-full left-0 lg:top-auto  lg:bg-transparent lg:shadow-none shadow-md lg:p-4 xl:p-0 ">
+                    class="hidden xl:w-[762px] xl:h-[38px] bg-white peer-checked:block lg:flex lg:flex-row lg:items-center w-full lg:w-auto lg:static absolute top-full left-0 lg:top-auto lg:bg-transparent lg:shadow-none shadow-md lg:p-4 xl:p-0">
                     <ul
-                        class="list-none flex flex-col lg:flex-row gap-1 xl:gap-2 xl:w-[762px] xl:h-[38px]  lg:w-[762px]  lg:justify-between lg:items-center lg:text-center  ">
+                        class="list-none flex flex-col lg:flex-row gap-1 xl:gap-2 xl:w-[762px] xl:h-[38px] lg:w-[762px] lg:justify-between lg:items-center lg:text-center">
                         <li
-                            class="nav-item w-full xl:w-[204px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition lg:flex lg:text-center  border-b-[0.1px] border-solid border-[#EBEDEF] lg:border-b-0 p-6"
-                            onclick="setActive(this)">
+                            class="nav-item w-full xl:w-[204px] xl:h-[38px] xl:rounded-[100px] h-[54px] lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition lg:flex lg:text-center border-b-[0.1px] border-solid border-[#EBEDEF] lg:border-b-0 p-6"
+                            onclick="setActive(this, 'nav1')"
+                            data-key="nav1">
                             <a href="#">
                                 <div
                                     class="lg:w-[172px] lg:h-[22px] text-[16px] font-bold font-[Font/Family] leading-[21.82px]">
-                                    Loa thần tài Mobifone</div>
+                                    Loa thần tài Mobifone
+                                </div>
                             </a>
                         </li>
                         <li
-                            class="nav-item w-full  xl:w-[145px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
-                            onclick="setActive(this)">
+                            class="nav-item w-full xl:w-[145px] xl:h-[38px] xl:rounded-[100px] h-[54px] lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
+                            onclick="setActive(this, 'nav2')"
+                            data-key="nav2">
                             <a href="#">
                                 <div
-                                    class=" lg:w-[119px] lg:h-[22px]text-[16px] font-bold font-[Font/Family] leading-[21.82px]   ">
-                                    Cách hoạt động</div>
+                                    class="lg:w-[119px] lg:h-[22px]text-[16px] font-bold font-[Font/Family] leading-[21.82px]">
+                                    Cách hoạt động
+                                </div>
                             </a>
                         </li>
                         <li
-                            class="nav-item w-full  xl:w-[92px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
-                            onclick="setActive(this)">
+                            class="nav-item w-full xl:w-[92px] xl:h-[38px] xl:rounded-[100px] h-[54px] lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
+                            onclick="setActive(this, 'nav3')"
+                            data-key="nav3">
                             <a href="#">
                                 <div
-                                    class="lg:w-[70px] lg:h-[22px] text-[16px] font-bold font-[Font/Family] leading-[21.82px]  lg:flex lg:text-center ">
-                                    Ưu điểm</div>
+                                    class="lg:w-[70px] lg:h-[22px] text-[16px] font-bold font-[Font/Family] leading-[21.82px] lg:flex lg:text-center">
+                                    Ưu điểm
+                                </div>
                             </a>
                         </li>
                         <li
-                            class="nav-item w-full  xl:w-[100px] xl:h-[38px] xl:rounded-[100px] h-[54px]   lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
-                            onclick="setActive(this)">
+                            class="nav-item w-full xl:w-[100px] xl:h-[38px] xl:rounded-[100px] h-[54px] lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
+                            onclick="setActive(this, 'nav4')"
+                            data-key="nav4">
                             <a href="#">
                                 <div
-                                    class="lg:w-[79px] lg:h-[22px] text-[16px] font-bold font-[Font/family] leading-[21.82px]  lg:flex lg:text-center">
-                                    Giải pháp</div>
+                                    class="lg:w-[79px] lg:h-[22px] text-[16px] font-bold font-[Font/family] leading-[21.82px] lg:flex lg:text-center">
+                                    Giải pháp
+                                </div>
                             </a>
                         </li>
                         <li
-                            class="nav-item w-full  xl:w-[117px] xl:h-[38px] xl:rounded-[100px] h-[54px]   lg:px-4 py-2 rounded  lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] e transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
-                            onclick="setActive(this)">
+                            class="nav-item w-full xl:w-[117px] xl:h-[38px] xl:rounded-[100px] h-[54px] lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] e transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
+                            onclick="setActive(this, 'nav5')"
+                            data-key="nav5">
                             <a href="#">
                                 <div
                                     class="lg:w-[90px] lg:h-[22px] text-[16px] font-bold font-[Font/family] leading-[21.82px] lg:flex lg:text-center">
-                                    Khách hàng</div>
+                                    Khách hàng
+                                </div>
                             </a>
                         </li>
                         <li
-                            class="nav-item w-full  xl:w-[64px] xl:h-[38px] xl:rounded-[100px] h-[54px]  lg:px-4 py-2 rounded lg:hover:bg-white  hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition  border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
-                            onclick="setActive(this)">
+                            class="nav-item w-full xl:w-[64px] xl:h-[38px] xl:rounded-[100px] h-[54px] lg:px-4 py-2 rounded lg:hover:bg-white hover:bg-[#FFF0F2] hover:text-[#B90417] active:bg-[#c7878d] active:text-[#ffffff] transition border-b border-solid border-[#EBEDEF] lg:border-b-0 p-6"
+                            onclick="setActive(this, 'nav6')"
+                            data-key="nav6">
                             <a href="#">
                                 <div
-                                    class="text-[16px] font-bold font-[Font/Family] leading-[21.82px] ">FAQ</div>
+                                    class="text-[16px] font-bold font-[Font/Family] leading-[21.82px]">
+                                    FAQ
+                                </div>
                             </a>
                         </li>
                     </ul>
@@ -100,19 +134,18 @@
                 <div
                     class="flex w-[154px] h-[36px] sm:w-[189px] sm:h-[40px] lg:w-[125px] lg:h-[40px] gap-3 sm:gap-6 lg:pr-0 pr-2">
                     <button
-                        class="sm:w-[125px] sm:h-[40px] w-[106px]  h-[36px] rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
+                        class="sm:w-[125px] sm:h-[40px] w-[106px] h-[36px] rounded-full border-[3px] border-[#B90417] text-[#b90417] bg-white text-sm font-bold cursor-pointer">
                         Nhận tư vấn
                     </button>
                     <!-- Toggle Menu Button -->
                     <label for="menu-toggle" class="lg:hidden cursor-pointer">
-                        <img src="/UI/img/navtoggle.png" alt="Menu Toggle"
+                        <img
+                            src="/UI/img/navtoggle.png"
+                            alt="Menu Toggle"
                             class="sm:w-12 sm:h-10 w-9 h-9" />
                     </label>
                 </div>
-
             </div>
-
         </header>
     </body>
-
 </html>
