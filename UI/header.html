@@ -24,22 +24,45 @@
 
                 <input type="checkbox" id="menu-toggle" class="hidden peer" />
                 <script>
-          // Hàm thiết lập mục được chọn
+                    //mã code typescrip
+// function setActive(element: HTMLElement, key: string): void {
+//   // Lưu key của mục được chọn vào Local Storage
+//   localStorage.setItem('activeNavItem', key);
+
+//   // Xóa trạng thái active khỏi tất cả các mục
+//   const items = document.querySelectorAll<HTMLElement>('.nav-item');
+//   items.forEach(item => item.classList.remove('text-[#B90417]', 'font-bold'));
+
+//   // Thêm trạng thái active cho mục được chọn
+//   element.classList.add('text-[#B90417]', 'font-bold');
+// }
+
+// function restoreActiveNavItem(): void {
+//   const savedKey = localStorage.getItem('activeNavItem');
+//   if (savedKey) {
+//     const activeItem = document.querySelector<HTMLElement>(`.nav-item[data-key="${savedKey}"]`);
+//     if (activeItem) {
+//       activeItem.classList.add('text-[#B90417]', 'font-bold');
+//     }
+//   }
+// }
+
+// // Gọi hàm khôi phục khi trang load
+// window.onload = restoreActiveNavItem;
+
+
+
           function setActive(element, key) {
-            // Lưu key của mục được chọn vào Local Storage
             localStorage.setItem("activeNavItem", key);
 
-            // Xóa trạng thái active khỏi tất cả các mục
             const items = document.querySelectorAll(".nav-item");
             items.forEach((item) =>
-              item.classList.remove("text-[#B90417]", "font-bold")
+              item.classList.remove("text-[#B90417]", "font-bold","bg-[#FFF0F2]","lg:bg-white")
             );
 
-            // Thêm trạng thái active cho mục được chọn
-            element.classList.add("text-[#B90417]", "font-bold");
+            element.classList.add("text-[#B90417]", "font-bold","bg-[#FFF0F2]","lg:bg-white");
           }
 
-          // Hàm kiểm tra và khôi phục trạng thái khi load lại trang
           function restoreActiveNavItem() {
             const savedKey = localStorage.getItem("activeNavItem");
             if (savedKey) {
@@ -47,12 +70,11 @@
                 `.nav-item[data-key="${savedKey}"]`
               );
               if (activeItem) {
-                activeItem.classList.add("text-[#B90417]", "font-bold");
+                activeItem.classList.add("text-[#B90417]", "font-bold","bg-[#FFF0F2]","lg:bg-white");
               }
             }
           }
 
-          // Gọi hàm khôi phục khi trang load
           window.onload = restoreActiveNavItem;
         </script>
 
