@@ -7,45 +7,72 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100 p-10">
-    <div class="relative grid grid-cols-3 gap-1 ">
-      <!-- Cột trái -->
-      <div class="space-y-2">
-        <div class="bg-white shadow p-4 rounded-md">Phòng tránh gian lận</div>
-        <div class="bg-white shadow p-4 rounded-md">Giải pháp đa nền tảng</div>
-        <div class="bg-white shadow p-4 rounded-md">Kết nối mọi lúc mọi
-          nơi</div>
-        <div class="bg-white shadow p-4 rounded-md">Thời gian bảo hành</div>
+    <div class="relative w-full h-screen flex items-center justify-center">
+      <!-- Ảnh bên trái -->
+      <div class="relative">
+        <img src="image1.jpg" alt="Ảnh 1" class="w-20 h-20 object-cover">
+        <!-- Điểm trung tâm ảnh (trợ giúp định vị) -->
+        <div
+          class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+        </div>
       </div>
 
-      <!-- Đoạn thẳng xoay -->
+      <!-- Đoạn thẳng -->
       <div
-        class="w-[232px] h-[1141px] top-[298.5px] left-[845.5px] translate-x-[10px]">
-        <div
-          class="w-full lg:w-[300px] h-0.5 border-t-2 border-dashed border-red-500 transform -rotate-45 absolute"
-          style="top: 12%; left: 20%;"></div>
-        <div
-          class="w-32 h-0.5 border-t-2 border-dashed border-red-500 transform rotate-45 absolute"
-          style="top: 37%; left: 20%;"></div>
-        <div
-          class="w-32 h-0.5 border-t-2 border-dashed border-red-500 transform rotate-45 absolute"
-          style="top: 62%; left: 20%;"></div>
-        <div
-          class="w-32 h-0.5 border-t-2 border-dashed border-red-500 transform rotate-45 absolute"
-          style="top: 87%; left: 20%;"></div>
-      </div>
-      <!-- Cột phải -->
-      <div class="space-y-6">
-        <div class="bg-white shadow p-4 rounded-md">Tăng năng suất bán
-          hàng</div>
-        <div class="bg-white shadow p-4 rounded-md">Tốc độ thông báo tức
-          thì</div>
-        <div class="bg-white shadow p-4 rounded-md">Chất lượng thiết bị cao
-          cấp</div>
-        <div class="bg-white shadow p-4 rounded-md">Giao dịch không mất
-          phí</div>
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div id="line" class="h-1 bg-blue-500 absolute origin-left"></div>
       </div>
 
+      <!-- Ảnh bên phải -->
+      <div class="relative">
+        <img src="image2.jpg" alt="Ảnh 2" class="w-20 h-20 object-cover">
+        <!-- Điểm trung tâm ảnh (trợ giúp định vị) -->
+        <div
+          class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+        </div>
+      </div>
     </div>
+
+    <script>
+    const line = document.getElementById('line');
+const img1 = document.querySelector('img:nth-child(1)');
+const img2 = document.querySelector('img:nth-child(2)');
+
+// Hàm cập nhật vị trí và góc của đoạn thẳng
+function updateLinePosition() {
+  const rect1 = img1.getBoundingClientRect();
+  const rect2 = img2.getBoundingClientRect();
+
+  // Tính tọa độ trung tâm của hai ảnh
+  const center1 = {
+    x: rect1.left + rect1.width / 2,
+    y: rect1.top + rect1.height / 2,
+  };
+  const center2 = {
+    x: rect2.left + rect2.width / 2,
+    y: rect2.top + rect2.height / 2,
+  };
+
+  // Tính độ dài và góc nghiêng của đoạn thẳng
+  const dx = center2.x - center1.x;
+  const dy = center2.y - center1.y;
+  const distance = Math.sqrt(dx * dx + dy * dy);
+  const angle = Math.atan2(dy, dx) * (180 / Math.PI);
+
+  // Cập nhật đoạn thẳng
+  line.style.width = `${distance}px`;
+  line.style.transform = `rotate(${angle}deg)`;
+  line.style.left = `${center1.x}px`;
+  line.style.top = `${center1.y}px`;
+}
+
+// Lắng nghe sự kiện resize để cập nhật lại đoạn thẳng
+window.addEventListener('resize', updateLinePosition);
+window.addEventListener('load', updateLinePosition);
+
+    </script>
 
   </body>
 </html>
